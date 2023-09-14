@@ -170,26 +170,7 @@ def tokens_to_stream(compressed: list[Token]) -> bytes:
     )
 
 
-def create_table():
-    a = []
-    for i in range(256):
-        k = i << 24
-        for _ in range(8):
-            k = (k << 1) ^ 0x4C11DB7 if k & 0x80000000 else k << 1
-        a.append(k & 0xFFFFFFFF)
-    return a
-
-
-def crc32(bytestream):
-    crc_table = create_table()
-    crc = 0xFFFFFFFF
-    for byte in bytestream:
-        lookup_index = ((crc >> 24) ^ byte) & 0xFF
-        crc = ((crc & 0xFFFFFF) << 8) ^ crc_table[lookup_index]
-    return crc
-
-
-def string_to_zip(filename, strk):
+def string_to_zip(filename: str, strk: str) -> None:
     compressed = compress(strk)
     bitstream_bytes = tokens_to_stream(compressed)
     filename_bytes = filename.encode("ascii")
