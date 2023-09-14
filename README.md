@@ -1,6 +1,6 @@
 # ZIP files from scratch, the hard way, in Python
 
-This project contains a very lean implementation of the ZIP specification--without the use of existing ZIP file compressors. `zlib` is not used,
+This project contains a very lean implementation of the ZIP specification (~300 LOC)--without the use of existing ZIP file compressors. `zlib` is not used,
 and `zipfile` library is only used to check that the resulting ZIP file can be correctly decompressed. It implements
 LZ77 compression, transforms it into a DEFLATE bitstream and then wraps it in the correct ZIP file headers.
 
