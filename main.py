@@ -14,6 +14,8 @@ def compress(
     window, output = "", []
     while input_array != "":
         length, offset = blo(window, input_array, max_length, max_offset)
+        if offset < 1:
+            length = 1
         output.append(Token(offset, length, input_array[0]))
         window += input_array[:length]
         input_array = input_array[length:]
@@ -32,6 +34,7 @@ def blo(
         return (min((1 + best_length), max_length), 0)
 
     length, offset, max_length = 0, 0, min(max_length, len(input_string))
+    found_length = 0
     for index in range(1, (len(cut_window) + 1)):
         if (
             cut_window[-index] == input_string[0]
@@ -153,7 +156,6 @@ def tokens_to_stream(compressed: list[Token]) -> bytes:
             it += f"{code:07b}"[-7:]
             if nbits >= 1:
                 it += f"{ebits:0{nbits}b}"[-nbits:][::-1]
-
             code, ebits, nbits = distance_code(tok.offset)
             it += f"{code:05b}"[-5:]
             if nbits >= 1:
@@ -168,8 +170,6 @@ def tokens_to_stream(compressed: list[Token]) -> bytes:
         )
         + b"\x00"
     )
-
-
 def string_to_zip(filename: str, strk: str) -> None:
     compressed = compress(strk)
     bitstream_bytes = tokens_to_stream(compressed)
@@ -251,14 +251,13 @@ def string_to_zip(filename: str, strk: str) -> None:
 # Check that our zip file is valid
 import zipfile
 
-strk = """
-"Did you win your sword fight?"
+for strk in [""""Did you win your sword fight?"
 "Of course I won the fucking sword fight," Hiro says. "I'm the greatest sword fighter in the world."
 "And you wrote the software."
 "Yeah. That, too," Hiro says."
-"""
-string_to_zip("sample.txt", strk)
-with open("sample.zip", "rb") as f:
-    z = zipfile.ZipFile(f)
-    assert z.namelist() == ["sample.txt"]
-    assert z.read("sample.txt") == strk.encode("ascii")
+""", "aaaaaaaaaa", "abaaadfaa"]:
+    string_to_zip("sample.txt", strk)
+    with open("sample.zip", "rb") as f:
+        z = zipfile.ZipFile(f)
+        assert z.namelist() == ["sample.txt"]
+        assert z.read("sample.txt") == strk.encode("ascii"), f"{strk} failed"
