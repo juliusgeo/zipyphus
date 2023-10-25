@@ -1,0 +1,200 @@
+patient's and his months of work together. one cannot assume, of course, 
+that all these accumulated meanings were inherent in the stereotype 
+at the beginning of the therapy, or at any one time later on when 
+the stereotype was uttered; probably it is correct to think of it as 
+a matter of a well-grooved, stereotyped mode of expression- and no, 
+or but a few, other communicational grooves, as yet- being <there>, 
+available for the patient's use, as newly-emerging emotions and 
+ideas well up in him over the course of months. But it is true that the 
+therapist can sense, when he hears this stereotype, that there are 
+at this moment many emotional determinants at work in it, a blurred babel 
+of indistinct voices which have yet to become clearly delineated from 
+one another.   Sometimes it is not a verbal stereotype- a 
+"How are you now"? or an "I want to go home", or whatever- 
+but a nonverbal one which reveals itself, gradually, as the condensed 
+expression of more than one latent meaning. A hebephrenic man used 
+to give a repetitious wave of his hand a number of times during his 
+largely-silent 
+hours with his therapist. When the therapist came to feel 
+on sufficiently sure ground with him to ask him, "What is that, 
+Bill- hello or farewell"?, the patient replied, "Both, Dearie- 
+two in one".   Of all the possible forms of nonverbal expression, 
+that which seems best to give release, and communicational expression, 
+to complex and undifferentiated feelings is laughter. It is 
+no coincidence that the hebephrenic patient, the most severely dedifferentiated 
+of all schizophrenic patients, shows, as one of his characteristic 
+symptoms, laughter- laughter which now makes one feel scorned 
+or hated, which now makes one feel like weeping, or which now gives 
+one a glimpse of the bleak and empty expanse of man's despair; and 
+which, more often than all these, conveys a <welter> of feelings which 
+could in no way be 
+conveyed by any number of words, words which are so 
+unlike this welter in being formed and discrete from one another. To 
+a much less full extent, the hebephrenic person's belching or flatus 
+has a comparable communicative function; in working with these patients 
+the therapist eventually gets to do some at least private mulling 
+over of the possible meaning of a belch, or the passage of flatus, 
+not only because he is reduced to this for lack of anything else to analyze, 
+but also because he learns that even these animal-like sounds constitute 
+forms of communication in which, from time to time, quite different 
+things are being said, long before the patient can become sufficiently 
+aware of these, as distinct feelings and concepts, to say them 
+in words.   As I have been intimating, in the schizophrenic- 
+and perhaps also in the dreams of the neurotic; this is a question 
+which I have no wish to take up- condensation is a phenomenon in which 
+one finds not a condensed expression of various feelings and ideas 
+which are, at an unconscious level, well sorted out, but rather a condensed 
+expression of feelings and ideas which, even in the unconscious, 
+have yet to become well differentiated from one another. Freeman, 
+Cameron and McGhie, in their description of the disturbances of thinking 
+found in chronic schizophrenic patients, say, in regard to condensation, 
+that "**h the lack of adequate discrimination between the 
+self and the environment, and the objects contained therein **h in itself 
+is the prototypical condensation".   In my experience, a 
+great many of the patient's more puzzling verbal communications are 
+so for the reason that concrete meanings have not become differentiated 
+from figurative meanings in his subjective experience. Thus he may 
+be referring to some concrete thing, or incident, in his immediate environment 
+by some symbolic-sounding, hyperbolic reference to transcendental 
+events on the global scene. Recently, for example, a paranoid woman's 
+large-scale philosophizing, in the session, about the intrusive 
+curiosity which has become, in her opinion, a deplorable characteristic 
+of mid-twentieth-century human culture, developed itself, before the 
+end of the session, into a suspicion that I was surreptitiously peeking 
+at her partially exposed breast, as indeed I was. Or, equally 
+often, a concretistic-seeming, particularistic-seeming statement may consist, 
+with its mundane exterior, in a form of poetry- may be full 
+of meaning and emotion when interpreted as a figurative expression: 
+a metaphor, a smile, an allegory, or some other symbolic mode of speaking.
+
+Of such hidden meanings the patient himself is, more often 
+than not, entirely unaware. His subjective experience may be a remarkably 
+concretistic one. One hebephrenic women confided to me, "I 
+live in a world of words", as if, to her, words were fully concrete 
+objects; Burnham, in his excellent article (1955) concerning schizophrenic 
+communication, includes mention of similar clinical material. 
+A borderline schizophrenic young man told me that to him the various 
+theoretical concepts about which he had been expounding, in a most articulate 
+fashion, during session after session with me, were like great 
+cubes of almost tangibly solid matter up in the air above him; as he 
+spoke I was reminded of the great bales of cargo which are swung, high 
+in the air, from a docked steamship.
+
+The many linguistic techniques for reducing the amount of dictionary 
+information that have been proposed all organize the dictionary's 
+contents around prefixes, stems, suffixes, etc&. A significant 
+reduction 
+in the voume of store information is thus realized, especially 
+for a highly inflected language such as Russian. For English the reduction 
+in size is less striking. This approach requires that: (1) 
+each text word be separated into smaller elements to establish a correspondence 
+between the occurrence and dictionary entries, and (2) the information 
+retrieved from several entries in the dictionary be synthesized 
+into a description of the particular word. The logical scheme used 
+to accomplish the former influences the placement of information in 
+the dictionary file. Implementation of the latter requires storage of 
+information needed only for synthesis.   We suggest the application 
+of certain data-processing techniques as a solution to the problem. 
+But first, we must define two terms so that their meaning will be 
+clearly understood: _1._ <form>- any unique sequence of alphabetic 
+characters that can appear in a language preceded and followed 
+by a space. _2._ <occurrence>- an instance of a form in text.
+
+We propose a method for selecting only dictionary information 
+required by the text being translated and a means for passing the information 
+directly to the occurrences in text. We accomplish this by compiling 
+a list of text forms as text is read by the computer. A random-storage 
+scheme, based on the spelling of forms, provides an economical 
+way to compile this text-form list. Dictionary forms found to match 
+forms in the text list are marked. A location in the computer store 
+is also named for each marked form; dictionary information about the 
+form stored at this location can be retrieved directly by occurrences 
+of the form in text. Finally, information is retrieved from the dictionary 
+as required by stages of the translation process- the grammatic 
+description for sentence-structure determination, equivalent-choice 
+information for semantic analysis, and target-language equivalents 
+for output construction.   The dictionary is a form dictionary, 
+at least in the sense that complete forms are used as the basis for matching 
+text occurrences with dictionary entries. Also, the dictionary 
+is divided into at least two parts: the list of dictionary forms and 
+the file of information that pertains to these forms. A more detailed 
+description of dictionary operations- text lookup and dictionary 
+modification- give a clearer picture.   Text lookup, as we will 
+describe it, consists of three steps. The first is compiling a list 
+of text forms, assigning an information cell to each, and replacing text 
+occurrences with the information cell assigned to the form of each 
+occurrence. For this step the computer memory is separated into three 
+regions: cells in the ~W-region are used for storage of the forms 
+in the text-form list; cells in the ~X-region and ~Y region 
+are reserved as information cells for text forms.   When an occurrence 
+**f is isolated during text reading, a random memory address **f, 
+the address of a cell in the ~X-region, is computed from the form 
+of **f. Let **f denote the form of **f. If cell **f has not previously 
+been assigned as the information cell of a form in the text-form 
+list, it is now assigned as the information cell of **f. The form itself 
+is stored in the next available cells of the ~W-region, beginning 
+in cell **f. The address **f and the number of cells required to 
+store the form are written in **f; the information cell **f is saved 
+to represent the text occurrence. Text reading continues with the next 
+occurrence.   Let us assume that **f is identical to the form 
+of an occurrence **f which preceded **f in the text. When this situation 
+exists, the address **f will equal **f which was produced from **f. 
+If **f was assigned as the information cell for **f, the routine can 
+detect that **f is identical to **f by comparing **f with the form 
+stored at location **f. The address **f is stored in the cell **f. When, 
+as in this case, the two forms match, the address **f is saved to 
+represent the occurrence **f. Text reading continues with the next 
+occurrence.
+
+A third situation is possible. The formula for computing 
+random addresses from the form of each occurrence will not give a 
+distinct address for each distinct form. Thus, when more than one distinct 
+form leads to a particular cell in the ~X-region, a chain of 
+information cells must be created to accommodate the forms, one cell 
+in the chain for each form. If **f leads to an address **f that is equal 
+to the address computed from **f, even though **f does not match **f, 
+the chain of information cells is extended from **f by storing the 
+address of the next available cell in the ~Y-region, **f, in **f. 
+The 
+cell **f becomes the second information cell in the chain and is assigned 
+as the information cell of **f. A third cell can be added by storing 
+the address of another ~Y-cell in **f; similarly, as many cells 
+are added as are required. Each information cell in the chain contains 
+the address of the ~Y-cell where the form to which it is assigned 
+is stored. Each cell except the last in the chain also contains 
+the address of the ~Y-cell that is the next element of the chain; 
+the absence of such a link in the last cell indicates the end of the 
+chain. Hence, when the address **f is computed from **f, the cell **f 
+and 
+all ~Y-cells in its chain must be inspected to determine whether 
+**f is already in the form list or whether it should be added to the form 
+list and the chain. When the information cell for **f has been determined, 
+it is saved as a representation of **f. Text reading continues 
+with the next occurrence.   Text reading is terminated when 
+a pre-determined number of forms have been stored in the text-form list. 
+This initiates the second step of glossary lookup- connecting the 
+information cell of forms in the text-form list to dictionary forms. 
+Each form represented by the dictionary is looked up in the text-form 
+list. Each time a dictionary form matches a text form, the information 
+cell of the matching text form is saved. The number of dictionary 
+forms skipped since the last one matched is also saved. These two pieces 
+of information for each dictionary form that is matched by a text 
+form constitute the table of dictionary usage. If each text form is 
+marked when matched with a dictionary form, the text forms not contained 
+in the dictionary can be identified when all dictionary forms have 
+been read. The appropriate action for handling these forms can be taken 
+at that time.   Each dictionary form is looked up in the text-form 
+list by the same method used to look up a new text occurrence in 
+the form list during text reading. A random address **f that lies within 
+the ~X-region of memory mentioned earlier is computed from the 
+~i-th dictionary form. If cell **f is an information cell, it and 
+any information cells in the ~Y-region that have been linked to **f 
+each contain an address in the ~W-region where a potentially matching 
+form is stored. The dictionary form is compared with each of these 
+text forms. When a match is found, an entry is made in the table of 
+dictionary usage. If cell **f is not an information cell we conclude 
+that the ~i-th dictionary form is not in the text list.   These 
+two steps essentially complete the lookup operation. The final step 
+merely uses the table of dictionary usage to select the dictionary information 
+that pertains to each form matched in the text-form list, and 
+uses the list of information cells recorded in text order to attach 

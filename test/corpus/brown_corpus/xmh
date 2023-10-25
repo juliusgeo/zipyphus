@@ -1,0 +1,200 @@
+to have a generator of **f which is not a secant but a tangent of ~\g, 
+for then any point on such a generator will be transformed into 
+the point of tangency. Since two curves of symbol **f on ~<Q> intersect 
+in **f points, it follows that there are **f lines of **f which 
+are tangent to ~\g. Clearly, any line, ~<l>, of any bundle 
+having one of these points of tangency, ~<T>, as vertex will be transformed 
+into the entire pencil having the image of the second intersection 
+of ~<l> and ~<Q> as vertex and lying in the plane determined 
+by the image point and the generator of **f which is tangent to 
+~\g at ~<T>. A line through two of these points, **f and **f, 
+will be transformed into the entire bilinear congruence having the 
+tangents to ~\g at **f and **f as directrices.   A conic, ~<C>, 
+being a (1, 1) curve on ~<Q>, meets the image of any line 
+of **f, which we have already found to be a **f curve on ~<Q>, 
+in **f points. Hence its image, ~<C'>, meets any line of **f 
+in **f points. Moreover, ~<C'> obviously meets any line **f in 
+a single point. Hence ~<C'> is a **f curve on ~<Q>. Therefore, 
+the congruence of its secants, that is the image of a general 
+plane field of lines, is of order **f and class **f. Finally, the image 
+of a general bundle of lines is a congruence whose order is the order 
+of the congruence of invariant lines, namely **f and whose class is 
+the order of the image congruence of a general plane field of lines, 
+namely **f. 
+
+#2.#
+
+The preceding observations make it clear that there 
+exist line involutions of all orders greater than 1 with no complex 
+of invariant lines and with a complex of singular lines consisting exclusively 
+of the lines which meet a twisted curve ~\g. We now shall 
+show that any involution with these characteristics is necessarily 
+of the type we have just described.   To do this we must first 
+show that every line which meets ~\g in a point ~<P> meets its 
+image at ~<P>. To see this, consider a general pencil of lines 
+containing a general secant of ~\G. By (1), the image of this pencil 
+is a ruled surface of order **f which is met by the plane of the 
+pencil in a curve, ~<C>, of order **f. On ~<C> there is a 
+**f correspondence in which the **f points cut from ~<C> by a general 
+line, ~<l>, of the pencil correspond to the point of intersection 
+of the image of ~<l> and the plane of the pencil. Since ~<C> 
+is rational, this correspondence has ~<k> coincidences, each 
+of which implies a line of the pencil which meets its image. However, 
+since the pencil contains a secant of ~\g it actually contains only 
+**f singular lines. To avoid this contradiction it is necessary that 
+~<C> be composite, with the secant of ~\g and a curve of 
+order **f as components. Thus it follows that the secants of ~\g 
+are all invariant. But if this is the case, then an arbitrary pencil 
+of lines having a point, ~<P>, of ~\g as vertex is transformed 
+into a ruled surface of order **f having **f generators concurrent at 
+~<P>. Since a ruled surface of order ~<n> with ~<n> concurrent 
+generators 
+is necessarily a cone, it follows finally that every line through 
+a point, ~<P>, of ~\g meets its image at ~<P>, as asserted.
+
+Now consider the transformation of the lines of a bundle 
+with vertex, ~<P>, on ~\g which is effected by the involution 
+as a whole. From the preceding remarks, it is clear that such a bundle 
+is transformed into itself in an involutorial fashion. Moreover, 
+in this involution there is a cone of invariant lines of order **f, namely 
+the cone of secants of ~\g which pass through ~<P>. Hence 
+it follows that the involution within the bundle must be a perspective 
+de Jonquieres involution of order **f and the invariant locus must 
+have a multiple line of multiplicity either **f or **f. The first possibility 
+requires that there be a line through ~<P> which meets 
+~\g in **f points; the second requires that there be a line through 
+~<P> which meets ~\g in **f points. In each case, lines 
+of the bundles are transformed by involutions within the pencils they 
+determine with the multiple secant. In the first case the fixed elements 
+within each pencil are the multiple secant and the line joining the 
+vertex, ~<P>, to the intersection of ~\g and the plane of 
+the pencil which does not lie on the multiple secant. In the second, 
+the fixed elements are the lines which join the vertex, ~<P>, to 
+the two intersections of ~\g and the plane of the pencil which do 
+not lie on the multiple secant. The multiple secants, of course, are 
+exceptional and in each case are transformed into cones of order **f.
+
+Observations similar to these can be made at each point of ~\g. 
+Hence ~\g must have either a regulus of **f-fold secants or 
+a regulus of **f-fold secants. Moreover, if **f, no two of the multiple 
+secants can intersect. For if such were the case, either the plane 
+of the two lines would meet ~\g in more than ~<k> points or, 
+alternatively, the order of the image regulus of the pencil determined 
+by the two lines would be too high. But if no two lines of the regulus 
+of multiple secants of ~\g can intersect, then the regulus must 
+be quadratic, or in other words, ~\g must be either a **f or a **f 
+curve on a nonsingular quadric surface.   We now observe that 
+the case in which ~\g is a **f curve on a quadric is impossible if 
+the complex of singular lines consists exclusively of the lines which 
+meet ~\g. For any pencil in a plane containing a **f-fold secant 
+of ~\g has an image regulus which meets the plane of the pencil 
+in **f lines, namely the images of the lines of the pencil which pass 
+through the intersection of ~\g and the multiple secant, plus an additional 
+component to account for the intersections of the images of 
+the general lines of the pencil. However, if there is no additional complex 
+of singular lines, the order of the image regulus of a pencil is 
+precisely **f. This contradicts the preceding observations, and so, 
+under the assumption of this paper we must reject the possibility that 
+~\g is a **f curve on a quadric surface.   Continuing with 
+the case in which ~\g is a **f curve on a quadric ~<Q>, we first 
+observe that the second regulus of ~<Q> consists precisely of 
+the lines which join the two free intersections of ~\g and the planes 
+through any one of the multiple secants. For each of these lines 
+meets ~<Q> in three points, namely two points on ~\g and one 
+point on one of the multiple secants.   Now consider an arbitrary 
+line, ~<l>, meeting ~<Q> in two points, **f and **f. If 
+~|a is the multiple secant of ~\g which passes through **f and 
+~|b is the simple secant of ~\g which passes through **f, and 
+if **f are the points in which ~|a meets ~\g, and if **f is the 
+image of **f on the generator ~|b, it follows that the image of 
+the line **f is **f.
+
+These societies can expect to face difficult times. As the historic 
+processes of modernization gradually gain momentum, their cohesion 
+will be threatened by divisive forces, the gaps between rulers and 
+subjects, town and country, will widen; new aspirants for power will 
+emerge whose ambitions far exceed their competence; old rulers may 
+lose their nerve and their sense of direction. National leaders will 
+have to display the highest skills of statesmanship to guide their people 
+through times of uncertainty and confusion which destroy men's 
+sense of identity. Feelings of a community of interest will have to 
+be recreated- in some of the new nations, indeed, they must be built 
+for the first time- on a new basis which looks toward the future and 
+does not rely only on shared memories of the past. Nevertheless, with 
+foresight and careful planning, some of the more disruptive and dangerous 
+consequences of social change which have troubled other countries 
+passing through this stage can be escaped. The United States can 
+help by communicating a genuine concern with the problems these countries 
+face and a readiness to provide technical and other appropriate forms 
+of assistance where possible.   Our central goal should be 
+to provide the greatest positive incentive for these societies to tackle 
+boldly the tasks which they face. At the same time, we should recognize 
+that the obstacles to change and the lack of cohesion and stability 
+which characterize these countries may make them particularly prone 
+to diversions and external adventures of all sorts. It may seem to some 
+of them that success can be purchased much less dearly by fishing 
+in the 
+murky waters of international politics than by facing up to the intractable 
+tasks at home. We should do what we can to discourage this conclusion, 
+both by offering assistance for their domestic needs and by reacting 
+firmly to irresponsible actions on the world scene. When necessary, 
+we should make it clear that countries which choose to derive marginal 
+advantages from the cold war or to exploit their potential for 
+disrupting the security of the world will not only lose our sympathy but 
+also risk their own prospects for orderly development. As a nation, 
+we feel an obligation to assist other countries in their development; 
+but this obligation pertains only to countries which are honestly 
+seeking to become responsible members of a stable and forward-moving world 
+community. 
+
+#TRANSITIONAL SOCIETIES#
+
+When we look at countries like 
+Iran, Iraq, Pakistan, and Burma, where substantial progress has been 
+made 
+in creating a minimum supply of modern men and of social overhead capital, 
+and where institutions of centralized government exist, we find 
+a second category of countries with a different set of problems and hence 
+different priorities for policy. The men in power are committed 
+in principle to modernization, but economic and social changes are proceeding 
+only erratically. Isolated enterprises have been launched, but 
+they are not yet related to each other in a meaningful pattern. The 
+society is likely to be characterized by having a fairly modernized urban 
+sector and a relatively untouched rural sector, with very poor communications 
+between the two. Progress is impeded by psychological inhibitions 
+to effective action among those in power and by a failure on 
+their part to understand how local resources, human and material, can 
+be mobilized to achieve the national goals of modernization already symbolically 
+accepted.   Most countries in this second category share 
+the difficulty of having many of the structures of a modern political 
+and social system without the modern standards of performance required 
+to make them effective. In these rapidly changing societies there 
+is also too little appreciation of the need for effort to achieve goals. 
+The colonial period has generally left people believing that government 
+can, if it wishes, provide all manner of services for them- 
+and that with independence free men do not have to work to realize the 
+benefits of modern life. For example, in accordance with the fashion 
+of the times, most transitional societies have announced economic development 
+plans of varying numbers of years; such is the mystique of 
+planning that people expect that fulfillment of the plan will follow 
+automatically upon its announcement. The civil services in such societies 
+are generally inadequate to deal competently with the problems facing 
+them; and their members often equate a government career with security 
+and status rather than with sacrifice, self-discipline, and competence.
+
+American policy should press constantly the view that 
+until these governments demand efficiency and effectiveness of their 
+bureaucracies there is not the slightest hope that they will either modernize 
+of democratize their societies. We should spread the view that 
+planning and national development are serious matters which call for 
+effort as well as enthusiasm. Above all, we should seek to encourage 
+the leaders of these societies to accept the unpleasant fact that they 
+are responsible for their fates. Only within the framework of a mature 
+relationship characterized by honest appraisals of performance can 
+we provide telling assistance. With respect to those countries whose 
+leaders prefer to live with their illusions, we can afford to wait, 
+for in time their comparative lack of progress will become clear for all 
+to see.   Our technical assistance to these countries should 
+place special emphasis on inducing the central governments to assume the 
+role of advisor and guide which at an earlier stage foreign experts 
+assumed in dealing with the central governments. We should encourage 

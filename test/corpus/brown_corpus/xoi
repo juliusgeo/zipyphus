@@ -1,0 +1,200 @@
+both the rake angle of the knife as well as the friction 
+occurring between the back of the removed coating and the front of the 
+knife will determine in large part the detailed mechanism of the cutting 
+removal process.   It is difficult to measure the direction 
+and magnitude of ~<R> directly. In actual practice, the values most 
+readily amenable to measurement are the cutting force **f and the 
+shear angle ~|f. These two values and the rake angle ~|a are 
+sufficient to determine the other parameters of these relationships. 
+~|a is defined by the geometry of the knife; ~|f can readily 
+be determined by measuring the thickness of the coating before and after 
+cutting from the substrate; **f is instrumentally determined. From 
+Fig& 6 the relationship between these parameters can readily be 
+derived and the cutting force is **f where ~|l is the shear strength 
+of the coating and is a parameter of the coatings material, ~<w> 
+is the width of the removed coating and ~<t> is its thickness.
+
+If the cutting force, **f is plotted against film thickness, 
+a straight line should result passing through the origin and having slope 
+**f. However, in the actual assessment of the cutting force by instrumental 
+methods for any thickness of coating a number of spurious effects 
+occur which must be taken into account and which make the measured 
+value larger than the true cutting force indicated by eqn& (1). 
+
+#BLUNT KNIFE#
+
+One of these is the fact that the knife employed, no 
+matter how well sharpened, will have a slightly rounded cutting edge. 
+This signifies that ~|a, the rake angle, is no longer a constant 
+to zero film thickness. The curvature of this bluntness is, in the 
+case of the Carboloy knife employed in the Hesiometer, determined by 
+the grain sizes of the polished grit and the tungsten carbide crystals 
+cemented together in the knife body and is in the order of 0.1 to 0.2 
+mil&.   The force vector concept of Fig& 6 can readily be 
+applied to this condition also. Because the rake angle **f at the tip 
+of the knife is very much smaller (or even negative) when compared 
+to the value of ~|a for the major portion of the knife, a very rapid 
+increase in cutting force with thickness will result. This reduces 
+to the relationship: **f where **f is the intercept at zero thickness 
+of the extrapolation of the slope indicated in eqn& (1), **f is the 
+thickness of the coating equivalent to the rounding off of the knife 
+tip, **f is a straight line first approximation of this roundness, and 
+the other symbols are equivalent to those of eqn& (1). It can be 
+seen that **f is a constant, and is determined for the most part by the 
+geometry of the knife. The blunter the knife, the higher is the value 
+of **f. The importance of a hard, abrasion resistant knife material 
+like the Carboloy employed in the Hesiometer immediately becomes 
+apparent. Softer knives would blunt very rapidly, making the value of 
+**f inexact. In extreme cases of very soft knives this value may even 
+change during the course of a measurement. 
+
+#KNIFE FRICTION#
+
+A second 
+factor which enters into the practical measurement of the instrumentally 
+determined cutting force is the frictional resistance caused 
+by the bottom of the knife against the substrate. This is not a constant 
+value like **f, but varies with the thickness of the coating and the 
+direction and magnitude of the resultants ~<R> and **f of Fig& 
+6. Under equilibrium conditions of cutting the chip exerts a thrust 
+**f against the knife which tends to push it into the substrate or 
+lift it away from the substrate depending on the vector direction of **f. 
+The resultant friction force, **f is thus directly proportional to 
+**f and consequently also to film thickness.   The value of **f 
+can readily be assessed by determining the frictional force exerted 
+on the knife while running over the previously stripped coating track 
+under various external loadings. A straight line relationship is usually 
+observed in a plot of **f against load ~<L>, having slope ~<k>, 
+and **f Since the load ~<L>, under actual cutting conditions 
+is caused by **f, it can be seen that **f   The measured force, 
+~<H>, in cutting removal of coatings from their substrates consequently 
+can be seen to be the sum of that force required to cut the 
+coating, **f that due to the bluntness of the knife, **f, and that due 
+to the friction between the bottom of the knife and the substrate, **f, 
+or **f The first two forces are directly interrelated and depend 
+upon film thickness, whereas **f is independent of these two and is a 
+constant for a given knife/coating combination.   These theoretical 
+relationships are more clearly illustrated in Fig& 7 and their 
+sum can be seen to correlate in form with practical measurements made 
+with the Hesiometer as illustrated in the first portion of Fig& 5 
+for the cutting mechanism. 
+
+#CHIPPING MECHANISM OF COHESIVE FAILURE# 
+
+Although a large number of coatings systems, 
+particularly at low thicknesses fail cohesively by the cutting mechanism, 
+frequently a second type of cohesive failure may also take place. 
+This is a chipping, dynamic type failure encountered with very brittle 
+coatings resins or very highly pigmented films. This is shown in 
+the photomicrograph of Fig& 8.   The basic difference between 
+the continuous cutting mechanism and that of the chipping mechanism 
+is that instead of shear occurring in the coating ahead of the knife continuously 
+without fracture, rupture intermittently occurs along the 
+shear plane. The detailed mechanisms of this type of failure have been 
+studied extensively by MERCHANT for metal cutting, and the principles 
+found can be directly applied to coatings.   By studying 
+high speed movies made of this type of failure, the sequence of relationships 
+as schematically illustrated in Fig& 9 could be observed.
+
+In the first picture (9~a) the knife is just beginning to advance 
+into the inclined surface which was left from the previous chip 
+formation. In the next, the shear plane angle is high, and extends to 
+the inclined work surface. With increasing advance of the knife into 
+the coating the shear plane extends to the coatings surface and the shear 
+angle rapidly decreases. Eventually, rupture occurs along the shear 
+plane (9~e), and the cycle repeats itself.   MERCHANT 
+has found that the same basic relationships which describe the geometry 
+and force systems in the case of the cutting mechanism can also be 
+applied to the discontinuous chip formation provided the proper values 
+of instantaneous shear angle and instantaneous chip thickness or cross-sectional 
+area are used. Consequently, if the shear angle ~|f 
+is replaced by the rupture angle **f, the relationships as described in 
+eqns& (1), (2), (4), and (6) will directly apply. 
+
+#THE CRACKING 
+MECHANISM#
+
+Under equilibrium cutting conditions, the chip exerts a 
+force **f against the coating and an equal opposite force **f against 
+the knife in the plane of the substrate as shown in Fig& 6. If the 
+rake angle ~|a of the knife is high enough and the friction angle 
+~|t between the front of the knife and the back of the chip is low 
+enough to give a positive value for **f, the resultant vector ~<R> 
+will lie above the plane of the substrate.
+
+Within only a few years, foamed plastics materials have managed 
+to grow into an integral, and important, phase of the plastics industry- 
+and the end is still not yet in sight. Urethane foam, as only 
+one example, was only introduced commercially in this country in 1955. 
+Yet last year's volume probably topped 100 million lb& and expectations 
+are for a market of 275 million lb& by 1964. Many of the other 
+foamed plastics, particularly the styrenes, show similar growth potential. 
+And there are even newer foamed plastics that are yet to be 
+evaluated. As this issue goes to press, for example, one manufacturer 
+has announced an epoxy foam with outstanding buoyancy and impact strength; 
+another reports that a cellular polypropylene, primarily for use 
+in wire coating applications, is being investigated.   On the 
+following pages, each of the major commercial foamed plastics is described 
+in detail, as to properties, applications, and methods of processing.
+
+It might be well to point out, however, some of the newer 
+developments that have taken place within the past few months which 
+might have a bearing on the future of the various foamed plastics involved. 
+In urethane foams, for example, there has been a definite trend 
+toward the polyether-type materials (which are now available in two-component 
+rigid foam systems) and the emphasis is definitely on one-shot 
+molding. Most manufacturers also seem to be concentrating on formulating 
+fire-resistant or self-extinguishing grades of urethane foam that 
+are aimed specifically at the burgeoning building markets. Urethane 
+foam as an insulator is also coming in for a good deal of attention. 
+In one outstanding example, Whirlpool Corp& found that by switching 
+to urethane foam insulation, they could increase the storage capacity 
+of gas refrigerators to make them competitive with electric models. 
+Much interest has also been expressed in new techniques for processing 
+the urethane foams, including spraying, frothing, and molding (see 
+article, p& 391 for details). And in meeting the demands for urethane 
+foam as a garment interlining, new adhesives and new methods of laminating 
+foam to a substrate have been developed.   New techniques 
+for automatic molding of expandable styrene beads have helped boost 
+that particular material into a number of new consumer applications, including 
+picnic chests, beverage coolers, flower pots, and flotation-type 
+swimming toys. Two other end-use areas which contributed to expandable 
+styrene's growth during the year were packaging (molded inserts 
+replacing complicated cardboard units) and foamed-core building panels. 
+Extruded expandable styrene film or sheet- claimed to be competitive 
+price-wise with paper- also showed much potential, particularly 
+for packaging. Sandwich panels for building utility shelters that 
+consist of kraft paper skins and rigid styrene foam cores also aroused 
+interest in the construction field.   In vinyl foam, the big news 
+was the development of techniques for coating fabrics with the material 
+(for details, see P& 395). Better "hand", a more luxurious 
+feel, and better insulating properties were claimed to be the result. 
+Several companies also saw possibilities in using the technique for 
+extruding or molding vinyl products with a slight cellular core that 
+would reduce costs yet would not affect physical properties of the end 
+product to any great extent.   Readers interested in additional 
+information on foams are referred to the Foamed Plastics Chart appearing 
+in the Technical Data section and to the list of references which 
+appears below. 
+
+#URETHANE FOAMS#
+
+@ Since the mid 1950s, when 
+urethane foam first made its appearance in the American market, growth 
+has been little short of fantastic. Present estimates are that production 
+topped the 100-million-lb& mark in 1960 (85 to 90 million 
+lb& for flexible, 10 or 11 million lb& for rigid); by 1965, production 
+may range from 200 to 350 million lb& for flexible and from 115 
+to 150 million lb& for rigid. The markets that have started to open 
+up for the foam in the past year or so seem to justify the expectations. 
+Furniture upholstery, as just one example, can easily take millions 
+of pounds; foamed refrigerator insulation is under intensive evaluation 
+by every major manufacturer; and use of the foam for garment 
+interlining is only now getting off the ground, with volume potential 
+in the offing. _BASIC CHEMISTRY_ Urethane foams are, basically, 
+reaction products of hydroxyl-rich materials and polyisocyanates (usually 
+tolylene diisocyanate). Blowing can be either one of two types- 
+carbon dioxide gas generated by the reaction of water on the polyisocyanate 
+or mechanical blowing through the use of a low-boiling liquid 
+such as a fluorinated hydrocarbon.   The most important factor 
+in determining what properties the end-product will have is quite naturally 

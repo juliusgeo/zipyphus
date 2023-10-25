@@ -1,0 +1,200 @@
+**f. We know that in the ~<C>-plane both ~<C> and **f are analytic. 
+In the ~<C>-plane we construct a set of rectangular Cartesian 
+coordinates ~<u>, ~<v> with the origin at ~<Q> and 
+such that both ~<C> and **f have finite slope at ~<Q>. Near 
+~<Q>, both curves can be represented by analytic functions of 
+~<u>. 
+In a neighborhood of ~<Q> the difference between these 
+functions is also a single-valued, analytic function of ~<u>. Furthermore, 
+one can find a neighborhood of ~<Q> in which the difference 
+function is monotone, for since it is analytic it can have only 
+a finite number of extrema in any interval. Now, to find **f, one needs 
+the intersection of ~<C> and **f near ~<Q>. But **f is just 
+the curve **f translated without rotation through a small arc, for 
+**f is always obtained by rotating ~<C> through exactly 90`. The 
+arc is itself a segment of an analytic curve. Thus if ~<e> is 
+sufficiently 
+small, there can be only one intersection of ~<C> and 
+**f near ~<Q>, for if there were more than one intersection for every 
+~<e> then the difference between ~<C> and **f near ~<Q> 
+would not be a monotone function. Therefore, **f is single-valued 
+near ~<Q>. It is also seen that **f, since the change from **f 
+to **f is accomplished by a continuous translation. Thus **f is also 
+continuous at **f, and in a neighborhood of **f which does not contain 
+a tangent point.   We turn now to the set of tangent points on 
+the graph. This set must consist of isolated points and closed intervals. 
+The fact that there can not be any limit points of the set except 
+in closed intervals follows from the argument used in Lemma 1, namely, 
+that near any tangent point in the ~<C>-plane the curves ~<C> 
+and **f are analytic, and therefore the difference between them 
+must be a monotone function in some neighborhood on either side of the 
+tangent point. This prevents the occurrence of an infinite sequence 
+of isolated tangent points. 
+
+#LEMMA 2.#
+
+<In some neighborhood of 
+an 
+isolated tangent point in the ~f-plane, say **f, the function **f is 
+either double-valued or has no values defined, except at the tangent 
+point itself, where it is single-valued>. _PROOF._ A tangent point 
+~<Q> in the ~<C>-plane occurs when ~<C> and **f are 
+tangent to one another. A continuous change in ~<t> through an amount 
+~<e> results in a translation along an analytic arc of the curve 
+**f. There are three possibilities: (a) **f remains tangent to 
+~<C> as it is translated; (b) **f moves away from ~<C> and 
+does not intersect it at all for **f; (c) **f cuts across ~<C> 
+and there are two ordinary intersections for every ~<t> in **f. The 
+first possibility results in a closed interval of tangent points 
+in the ~<f>-plane, the end points of which fall into category (b) 
+or (c). In the second category the function **f has no values defined 
+in a neighborhood **f. In the third category the function is double-valued 
+in this interval. The same remarks apply to an interval on the 
+other side of **f. Again, the analyticity of the two curves guarantee 
+that such intervals exist. In the neighborhood of an end point of an 
+interval of tangent points in the ~<f>-plane the function is two-valued 
+or no-valued on one side, and is a single-valued function consisting 
+entirely of tangent points on the other side.   With the 
+above results we can make the following remarks about the graph of ~<f>. 
+First, for any value of ~<t> for which all values of ~<f(t)> 
+are ordinary points the number of values of ~<f(t)> must be 
+odd. For it is clear that the total number of ordinary intersections 
+of ~<C> and **f must be even (otherwise, starting in the interior 
+of ~<C>, **f could not finally return to the interior), and the 
+center of rotation at ~<t> is the argument of the function, not a 
+value. Therefore, for any value of ~<t> the number of values of 
+~<f(t)> is equal to the (finite) number of tangent points corresponding 
+to the argument ~<t> plus an odd number. 
+
+#DEFINITION.#
+
+The 
+number of ordinary values of the function ~<f(t)> at ~<t> 
+will be called its multiplicity at ~<t>. 
+
+#LEMMA 3.#
+
+<The graph 
+of ~f has at least one component whose support is the entire interval 
+~[0,<T>]. _PROOF_ We suppose not. Then every component 
+of the graph of ~<f> must be defined over a bounded sub-interval. 
+Suppose **f is defined in the sub-interval **f. Now **f and **f 
+must both be tangent points on the ~<n>th component in the ~<f>-plane; 
+otherwise by Lemma 1 the component would extend beyond 
+these points. Further, we see by Lemma 2 that the multiplicity of 
+~<f> can only change at a tangent point, and at such a point can 
+only change by an even integer. Thus the multiplicity of **f for a given 
+~<t> must be an even number. This is true of all components 
+which have such a bounded support. But this is a contradiction, for we 
+know that the multiplicity of ~<f(t)> is odd for every ~<t>.
+
+We have shown that the graph of ~<f> contains at least one 
+component whose inverse is the entire interval ~[0,<T>], and 
+whose multiplicity is odd. There must be an odd number of such components, 
+which will be called complete components. The remaining (incomplete) 
+components all have an even number of ordinary points at any argument, 
+and are defined only on a proper 
+sub-interval of ~[0,<T>].
+
+We must now show that on some component of the graph there exist 
+two points for which the corresponding diagonal points in the ~<C>-plane 
+are on opposite sides of ~<C>. We again consider a 
+fixed point ~<P> at **f and a variable point ~<Q> at **f on 
+~<C>. We erect a square with ~<PQ> as a side and with free 
+corners **f and **f adjacent to ~<P> and ~<Q> respectively. 
+As ~<s> varies from zero to ~<T>, the values of ~<s> for 
+which **f and **f <cross> ~<C> will be denoted by **f and **f 
+respectively. We have **f, plus tangent points. These ~<s>-values 
+are just the ordinary values of **f. 
+
+#LEMMA 4.#
+
+<The values **f 
+are the ordinary values at **f of a multi-valued function ~<g(t)> 
+which has components corresponding to those of ~<f(t)>. _PROOF._ 
+We first define a function ~<b(t)> as follows: given the 
+set of squares such that each has three corners on ~<C> and vertex 
+at ~<t>, ~<b(t)> is the corresponding set of positive parametric 
+differences between ~<t> and the <backward> corner points. 
+The functions ~<f> and ~<b> have exactly the same multiplicity 
+at every argument ~<t>. Now with ~<P> fixed at **f, **f-values 
+occur when the corner **f crosses ~<C>, and are among the values 
+of ~<s> such that **f. The roots of this equation are just the 
+ordinates of the intersections of the graph of ~<b> with a straight 
+line of unit slope through **f in the ~<b>-plane (the plane of 
+the graph of ~<b>). We define these values as **f, and define ~<g(t)> 
+in the same way for each ~<t>. Thus we obtain ~<g(t)> 
+by introducing an oblique ~<g(t)>-axis in the ~<b>-plane. 
+
+#INTRODUCTION.#
+
+In @1 we investigate a new series of line involutions 
+in a projective space of three dimensions over the field of complex 
+numbers. These are defined by a simple involutorial transformation 
+of the points in which a general line meets a nonsingular quadric surface 
+bearing a curve of symbol **f. Then in @2 we show that any line 
+involution with the properties that (a) It has no complex of invariant 
+lines, and (b) Its singular lines form a complex consisting exclusively 
+of the lines which meet a twisted curve, is necessarily of the 
+type discussed in @1. No generalization of these results to spaces 
+of more than three dimensions has so far been found possible. 
+
+#1.# 
+
+Let ~<Q> be a nonsingular quadric surface bearing reguli **f 
+and **f, and let ~\g be a **f curve of order ~<k> on ~<Q>. 
+A 
+general line ~<l> meets ~<Q> in two points, **f and **f, through 
+each of which passes a unique generator of the regulus, **f, whose 
+lines are simple secants of ~\g. On these generators let **f and 
+**f be, respectively, the harmonic conjugates of **f and **f with respect 
+to the two points in which the corresponding generator meets ~\g. 
+The line **f is the image of ~<l>. Clearly, the transformation 
+is involutorial.   We observe first that no line, ~<l>, 
+can meet its image except at one of its intersections with ~<Q>. 
+For if it did, the plane of ~<l> and ~<l'> would contain 
+two generators of **f, which is impossible. Moreover, from the definitive 
+transformation of intercepts on the generators of **f, it is clear 
+that the only points of ~<Q> at which a line can meets its image 
+are the points of ~\g. Hence the totality of singular lines is 
+the ~<k>th order complex of lines which meet ~\g.   The 
+invariant lines are the lines of the congruence of secants of ~\g, 
+since each of these meets ~<Q> in two points which are invariant. 
+The order of this congruence is **f, since **f secants of a curve of 
+symbol ~(<a,b>) on a quadric surface pass through an arbitrary point. 
+The class of the congruence is **f, since an arbitrary plane meets 
+~\g in ~<k> points.   Since the complex of singular 
+lines is of order ~<k> and since there is no complex of invariant 
+lines, it follows from the formula **f that the order of the involution 
+is **f.   There are various sets of exceptional lines, or lines 
+whose images are not unique. The most obvious of these is the quadratic 
+complex of tangents to ~<Q>, each line of which is transformed 
+into the entire pencil of lines tangent to ~<Q> at the image 
+of the point of tangency of the given line. Thus pencils of 
+tangents to ~<Q> are transformed into pencils of tangents. It is 
+interesting that a 1:1 correspondence can be established between the 
+lines of two such pencils, so that in a sense a unique image can actually 
+be assigned to each tangent. For the lines of any plane, ~|p, 
+meeting ~<Q> in a conic ~<C>, are transformed into the congruence 
+of secants of the curve ~<C'> into which ~<C> is 
+transformed in the point involution on ~<Q>. In particular, tangents 
+to ~<C> are transformed into tangents to ~<C'>. Moreover, 
+if **f and **f are two planes intersecting in a line ~<l>, tangent 
+to ~<Q> at a point ~<P>, the two free intersections of 
+the image curves **f and **f must coincide at ~<P'>, the image 
+of ~<P>, and at this point **f and **f must have a common tangent 
+~<l'>. Hence, thought of as a line in a particular plane ~|p, 
+any tangent to ~<Q> has a unique image and moreover this image 
+is the same for all planes through ~<l>.   Each generator, 
+~|l, of **f is also exceptional, for each is transformed into the 
+entire congruence of secants of the curve into which that generator 
+is transformed by the point involution on ~<Q>. This curve is of 
+symbol **f since it meets ~|l, and hence every line of **f in the 
+**f invariant points on ~|l and since it obviously meets every line 
+of **f in a single point. The congruence of its secants is therefore 
+of order **f and class **f.   A final class of exceptional lines 
+is identifiable from the following considerations: Since no two 
+generators of **f can intersect, it follows that their image curves 
+can have no free intersections. In other words, these curves have only 
+fixed intersections common to them all. Now the only way in which all 
+curves of the image family of **f can pass through a fixed point is 

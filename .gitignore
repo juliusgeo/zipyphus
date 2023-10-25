@@ -1,3 +1,9 @@
 .idea/
+*/sample.zip
 sample.zip
 __pycache__/
+.hypothesis/
+.pytest_cache/
+.mypy_cache
+build/
+*.egg-info

@@ -1,0 +1,200 @@
+by addition symbols may be placed in any order.   When solving 
+an equation that involves division as well as other steps, do all 
+the division steps first 
+to reduce those parts of the equation to their 
+numerical value. Multiplication, subtraction, and addition can then 
+be accomplished as they appear in the equation by starting at the left 
+end of the equation and working toward the right. Completing the 
+division first also includes those division parts that require multiplication, 
+subtraction, or addition steps: **f This would be reduced 
+by multiplying 8 times 6 and then dividing the product by 12. This part 
+of the equation would then become 4.   For use in formulas, fractions 
+should be converted to their decimal equivalents. The easiest 
+way to do this is with a conversion chart. Charts for this purpose 
+are available from many sources. They are included in all types of mathematical 
+handbooks and they are stamped on some types of precision 
+measuring instruments.   The various mathematical processes can 
+be simplified by carrying the results to only two or three decimal places. 
+Shortening the results in this manner will not have any detrimental 
+effect on the accuracy of the final result.   Some formulas 
+contain "constants". A constant is a number that remains the same 
+regardless of the other numbers used in the formula and the resultant 
+equation. It is a number without which the equation cannot be solved 
+correctly.   Rodding formulas apply to many phases of the sport. 
+The answers they give can often pave the way to performance increases 
+and, 
+quite often, are necessary for completing entry blanks for different 
+events. When it is needed, one formula is as important as another. 
+However, some formulas are used more than others. We'll take 
+them in the general order of their popularity. 
+
+#ENGINE DISPLACEMENT# 
+
+A rodder should be able to compute the displacement of his engine. 
+Displacement is sometimes referred to as "swept volume". Most 
+entry blanks for competitive events require engine displacement information 
+because of class restrictions. It is good to be able to compute 
+displacement so that changes in it resulting from boring and stroking 
+can be computed.   Factors involved in the displacement formula 
+are the bore diameter of the engine's cylinders, the length of the 
+piston stroke, the number of cylinders in the engine, and a constant. 
+The constant is .7854, which is one-quarter of 3.1416, another constant 
+known as "pi". Pi is used in formulas concerned with the dimensions 
+of circles.   Actually, the engine displacement formula is 
+the standard formula for computing the volume of a cylinder of any type 
+with an added factor that represents the number of cylinders in the 
+engine. The cross-sectional area of the cylinders is determined and 
+then the volume of the individual cylinders is computed by multiplying 
+the area by the stroke length, which is the equivalent of the length 
+of the cylinders. Multiplying the result by the number of cylinders 
+in the engine gives the engine's total displacement.   The formula 
+is: **f. Dimensions in inches, and fractions of inches will give 
+the displacement in cubic inches. Dimensions in centimeters and fractions 
+of centimeters will give the displacement in cubic centimeters 
+(~cc). One inch equals 2.54 centimeters: one cubic inch equals 16.38 
+cubic centimeters.   For example, let's consider a standard 
+283 cubic inch Chevy ~V8. These engines have a cylinder diameter 
+of 3-7/8 inches and a stroke length of 3 inches. The formula, with 
+the fractions converted to decimals, becomes **f.   To arrive 
+at the answer, multiply the numbers together by starting at the left of 
+the group and working to the right. The different steps will look like 
+this: **f 
+
+#COMPRESSION RATIO#
+
+A cylinder's compression ratio 
+is computed by comparing the cylinder's volume, or its displacement, 
+with the total volume of the cylinder and its combustion chamber. 
+Cylinder volume can be determined mathematically but combustion chamber 
+volume must be measured with a liquid.   Cylinder volume is 
+determined in exactly the same manner as for the displacement formula: 
+**f.   To measure the volume of one of the combustion chambers 
+in the cylinder head, install the valves and spark plug in the chamber 
+and support the head so that its gasket surface is level. Then pour 
+water or light oil from a graduated beaker into the chamber to fill 
+the chamber to its gasket surface. Do not overfill the chamber. This 
+is possible with water and other liquids that have a high surface tension. 
+Such liquids will rise to a considerable height above the surface 
+around the chamber before they will flow out of the chamber.
+
+The amount of liquid poured into the chamber is determined by subtracting 
+the quantity still in the beaker when the chamber is full from 
+the original quantity. Most beakers are graduated in cubic centimeters 
+(~cc), making it necessary to convert the result to cubic inches. 
+However, the displacement of the cylinder can be converted to cubic 
+centimeters. The compression ratio arrived at with the formula will 
+be the same regardless of whether cubic inches or cubic centimeters are 
+used. The only precaution is that all volumes used in the formula be 
+quoted in the same terms.   The volume of the cylinder opening 
+in the head gasket must be computed by multiplying its area in square 
+inches by the gasket's thickness in thousandths of an inch. Sometimes 
+it is necessary to roughly calculate the square inch area of the opening 
+but the calculation can usually be made with sufficient accuracy 
+that it won't affect the final computation. The volume of the opening 
+is added to the combustion chamber volume.   Another thing 
+that must be taken into consideration is the volume of the area between 
+the top of the piston and the top of the cylinder block when the piston 
+is in top dead center position. Compute this volume by measuring 
+the distance from the top of the block to the piston head as accurately 
+as possible with a depth micrometer or some other precision measuring 
+device and then multiply the area of the cylinder by the depth. The 
+formula for this step is: **f This volume is added to the total volume 
+of the combustion chamber and head gasket opening. The total of 
+these three volumes is the "final combustion chamber volume".
+
+After the factors just described have been computed, they are applied 
+to the following formula: **f   For an example let's dream 
+up an engine that has a final combustion chamber volume of 5 cubic 
+inches and a cylinder volume of 45 cubic inches. Applying these figures 
+to the formula we get the equation: **f The compression ratio is 
+10 to 1.   This method of computing compression ratio cannot be 
+used accurately for engines that have pistons with either domed or irregularly 
+shaped heads. Any irregularity on the piston heads will make 
+it impossible, with normal means, to determine the final combustion 
+chamber volume because the volume displaced by the piston heads cannot 
+be readily computed. The only way to determine the final combustion 
+chamber volume when such pistons are used is by measuring it with liquid 
+while the cylinder head is bolted to the cylinder block and the piston 
+is in top dead center position. 
+
+#GEAR RATIO- SPEED RELATIONSHIPS# 
+
+There are four versions of the formula that involves the relationships 
+of car speed, engine speed, rear axle gear ratio, and rear tire 
+size. By using the appropriate version any one of these factors can 
+be determined for any combination of the other three.   To simplify 
+the formulas a representative symbol is substituted for each of 
+the factors. These are   ~MPH for Car speed   ~RPM 
+for Engine crankshaft speed   ~R for Rear axle gear ratio
+
+~W for Tire size   Tire size can be determined in 
+several ways but the one that is the easiest and as accurate as any is 
+by measuring the effective radius of a wheel and tire assembly. This 
+is done by measuring the distance from the surface on which the tire 
+is resting to the center of the rear axle shaft. A tire must be inflated 
+to its normal hot operating pressure and the car must be loaded to 
+its operating weight when this measurement is made. The measurement 
+must be in inches. Any fraction of an inch involved in the measurement 
+must be converted to a decimal equivalent to simplify the mathematics. 
+When tire size is measured in this manner a constant of 168 is used 
+in the formula.   To determine car speed for a given combination 
+of engine speed, gear ratio, and tire size, the formula is: **f 
+For an engine speed of 5000 ~rpm, a gear ratio of 4.00 to 1, and a 
+tire radius of 13 inches, the equation would look like this: **f
+
+To determine engine speed for a given combination of the other three 
+factors the formula is: **f Using the same figures as for the 
+previous example, the equation becomes: **f   To determine the 
+rear axle gear ratio for a combination of the other three factors, the 
+formula is: **f Using the figures from the previous examples, the 
+equation becomes: **f 
+
+#ORLANDO, FLA&, FEB& 2#- The best 2-year-old pacing mile up 
+to date at Ben White Raceway has been that of Mary Liner (Mainliner-Highland 
+Ellen), a member of the Dick Williams stable, who was 
+clocked 2:25. She is owned by Ralph H& Kroening, Milwaukee, 
+Wis&, who, according to the railbirds, can feel justly proud of her.
+
+Other good miles have been by Debonnie (Dale Frost-Debby 
+Hanover) and Prompt Time (Adios-On Time) in 2:28-:36; 
+Kimberly Gal (Galophone-Kimberly Hanover) 2:26.2; Laguerre 
+Hanover 
+(Tar Heel- Lotus Hanover) and Monel (Tar Heel-Miracle Byrd) 
+in 2:34~h. Laguerre Hanover is outstanding in type and conformation- 
+good body, plenty of heart girth, stands straight on his legs 
+on excellent feet- and has the smoothest gait. This colt is behind 
+most of the other 2-year-olds in the Simpson stable but can show 
+about as much pace as any of them. Monel shows improvement with each 
+work-out and looks the makings of a good brood mare after winning her 
+share of races.   Stardel (Star's Pride-Starlette Hanover), 
+2:34~h, looks quite promising. Fury Hanover (Hoot Mon-Fay), 
+Caper (Hoot Mon-Columbia Hanover) and Isaac (Hoot Mon-Goddess 
+Hanover) have been working together but have not equalled their best 
+work done some weeks ago. Fury and Caper worked in 2:35~h and did 
+it with ease. They are two good colts of different type. Fury is 
+upstanding and on the rangy side, and Caper is more the compact type. 
+I have never seen Caper off his feet- he seems to know nothing but 
+'trot' and keeps trying a little harder if asked to do so. Fury 
+has made a few mistakes but looks like a wonderful prospect, with his 
+impressive gait and stride which certainly make him cover the ground.
+
+Trackdown (Torrid-Mighty Lady) has worked a mile in 2:33.3~h. 
+It took this colt several weeks to strike a pace. Then, after 
+emasculation, he was eased up for a couple of weeks. He has thrived 
+on all he has gone through and looks the makings of a good little race 
+horse.   Thor Hanover (Adios-Trustful Hanover) is a wonderful 
+looking prospect and another good individual, with solid, rugged conformation, 
+good, flat bone and excellent feet. This colt arrived at 
+the Raceway early last November, and immediately was put into harness 
+and line-driven for a few days, and then put to cart and broken in 
+very nicely, knowing nothing but trot. He appeared in the hopples about 
+November 14, was treated for worms on the 18th, the latter date being 
+the first time he struck a real pace. On December 5 he paced a mile 
+in 2:55 on the twice-around, out in third position all the way. 
+This colt has done everything asked of him, and done it with ease. His 
+best mile to date is 2:32.2~h.   Gamecock (Tar Heel-Terka 
+Hanover) is another promising colt, and his best time is 2:32.2~h. 
+This is one of the best-tempered Tar Heels ever at the center. 
+The first time he was harnessed he stood like a gentle old mare; 
+the crupper under his tail seemed to be old stuff. The fourth time in 
+harness he walked off like a gentleman. Being blistered for curbs has 

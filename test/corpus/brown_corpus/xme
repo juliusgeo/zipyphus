@@ -1,0 +1,200 @@
+the range of **f. This completes the proof of statement (a). 
+It is certainly clear that the subspaces **f are invariant under ~<T>. 
+If **f is the operator induced on **f by ~<T>, then evidently 
+**f, because by definition **f is 0 on the subspace **f. This shows 
+that the minimal polynomial for **f divides **f. Conversely, let 
+~<g> be any polynomial such that **f. Then **f. Thus **f is divisible 
+by the minimal polynomial ~<p> of ~<T>, i&e&, **f 
+divides **f. It is easily seen that **f divides ~<g>. Hence the 
+minimal polynomial for **f is **f. 
+
+#COROLLARY.#
+
+<If **f are the 
+projections associated with the primary decomposition of> ~T, <then 
+each **f is a polynomial in> ~T, <and accordingly if a linear 
+operator> ~U <commutes with> ~T <then> ~U <commutes with 
+each of the **f i&e&, each subspace **f is invariant under> ~U.
+
+In the notation of the proof of Theorem 12, let us take a 
+look at the special case in which the minimal polynomial for ~<T> 
+is a product of first-degree polynomials, i&e&, the case in 
+which 
+each **f is of the form **f. Now the range of **f is the null space 
+**f of **f. Let us put **f. By Theorem 10, ~<D> is a diagonalizable 
+operator which we shall call the {diagonalizable part} 
+of ~<T>. 
+Let us look at the operator **f. Now **f **f so **f. The reader 
+should be familiar enough with projections by now so that he sees that 
+**f and in general that **f. When **f for each ~<i>, we shall have 
+**f, because the operator **f will then be 0 on the range of **f. 
+
+#DEFINITION.#
+
+<Let> ~N <be a linear operator on the vector 
+space> ~V. <We say that> ~N <is> {nilpotent} <if there 
+is some positive integer> ~r <such that> **f. 
+
+#THEOREM 13.#
+
+<Let> 
+~T <be a linear operator on the finite-dimensional vector 
+space> ~V <over the field> ~F. <Suppose that the minimal polynomial 
+for> ~T <decomposes over> ~F <into a product of linear 
+polynomials. Then there is a diagonalizable operator> ~D <on> 
+~V <and a nilpotent operator> ~N <on> ~V <such that> 
+(a) **f, (b) **f. <The diagonalizable operator> ~D <and the nilpotent 
+operator> ~N <are uniquely determined by> (a) <and> (b) 
+<and 
+each of them is a polynomial in> ~T. _PROOF._ We have just observed 
+that we can write **f where ~<D> is diagonalizable and ~<N> 
+is nilpotent, and where ~<D> and ~<N> not only commute 
+but are polynomials in ~<T>. Now suppose that we also have **f 
+where ~<D'> is diagonalizable, ~<N'> is nilpotent, and 
+**f. We shall prove that **f.   Since ~<D'> and ~<N'> 
+commute with one another and **f, we see that ~<D'> and ~<N'> 
+commute with ~<T>. Thus ~<D'> and ~<N'> 
+commute with any polynomial in ~<T>; hence they commute with ~<D> 
+and with ~<N>. Now we have **f or **f and all four of these 
+operators commute with one another. Since ~<D> and ~<D'> 
+are both diagonalizable and they commute, they are simultaneously 
+diagonalizable, and **f is diagonalizable. Since ~<N> and ~<N'> 
+are both nilpotent and they commute, the operator **f is nilpotent; 
+for, using the fact that ~<N> and ~<N'> commute **f 
+and so when ~<r> is sufficiently large every term in this expression 
+for **f will be 0. (Actually, a nilpotent operator on an ~<n>-dimensional 
+space must have its ~<n>th power 0; if we take **f 
+above, that will be large enough. It then follows that **f is large 
+enough, but this is not obvious from the above expression.) Now **f is 
+a diagonalizable operator which is also nilpotent. Such an operator 
+is obviously the zero operator; for since it is nilpotent, the minimal 
+polynomial for this operator is of the form **f for some **f; but 
+then since the operator is diagonalizable, the minimal polynomial cannot 
+have a repeated root; hence **f and the minimal polynomial is simply 
+~<x>, which says the operator is 0. Thus we see that **f and 
+**f. 
+
+#COROLLARY.#
+
+<Let> ~V <be a finite-dimensional vector 
+space over an algebraically closed field> ~F, <e&g&, the field 
+of complex numbers. Then every linear operator> ~T <on> ~V 
+<can be written as the sum of a diagonalizable operator> ~D <and 
+a nilpotent operator> ~N <which commute. These operators> ~D 
+<and> ~N <are unique and each is a polynomial in> ~T.
+
+From these results, one sees that the study of linear operators 
+on vector spaces over an algebraically closed field is essentially reduced 
+to the study of nilpotent operators. For vector spaces over non-algebraically 
+closed fields, we still need to find some substitute for 
+characteristic values and vectors. It is a very interesting fact that 
+these two problems can be handled simultaneously and this is what we 
+shall do in the next chapter.   In concluding this section, we 
+should like to give an example which illustrates some of the ideas of 
+the primary decomposition theorem. We have chosen to give it at the 
+end of the section since it deals with differential equations and thus 
+is not purely linear algebra. 
+
+#EXAMPLE 11.#
+
+In the primary decomposition 
+theorem, it is not necessary that the vector space ~<V> 
+be finite dimensional, nor is it necessary for parts (a) and (b) that 
+~<p> be the 
+minimal polynomial for ~<T>. If ~<T> is a linear operator 
+on an arbitrary vector space and <if> there is a monic polynomial 
+~<p> such that **f, then parts (a) and (b) of Theorem 12 are valid 
+for ~<T> with the proof which we gave.   Let ~<n> be 
+a positive integer and let ~<V> be the space of all ~<n> times 
+continuously differentiable functions ~<f> on the real line which 
+satisfy the differential equation **f where **f are some fixed constants. 
+If **f denotes the space of ~<n> times continuously differentiable 
+functions, then the space ~<V> of solutions of this differential 
+equation is a subspace of **f. If ~<D> denotes the differentiation 
+operator and ~<p> is the polynomial **f then ~<V> 
+is the null space of the operator ~<p(D)>, because **f simply says 
+**f. Let us now regard ~<D> as a linear operator on the subspace 
+~<V>. Then **f.   If we are discussing differentiable complex-valued 
+functions, then **f and ~<V> are complex vector spaces, 
+and **f may be any complex numbers. We now write **f where **f are 
+distinct complex numbers. If **f is the null space of **f, then Theorem 
+12 says that **f. In other words, if ~<f> satisfies the differential 
+equation **f, then ~<f> is uniquely expressible in the 
+form **f where **f satisfies the differential equation **f. Thus, the 
+study of the solutions to the equation **f is reduced to the study of 
+the space of solutions of a differential equation of the form **f. This 
+reduction has been accomplished by the general methods of linear algebra, 
+i&e&, 
+by the primary decomposition theorem.   To describe 
+the space of solutions to **f, one must know something about differential 
+equations, that is, one must know something about ~<D> other 
+than the fact that it is a linear operator. However, one does not 
+need to know very much. It is very easy to establish by induction on 
+~<r> that if ~<f> is in **f then **f that is, **f, etc&. Thus 
+**f if and only if **f. A function ~<g> such that **f, i&e&, 
+**f, must be a polynomial function of degree **f or less: **f. 
+Thus ~<f> satisfies **f if and only if ~<f> has the form **f. 
+Accordingly, the 'functions' **f span the space of solutions of 
+**f. Since **f are linearly independent functions and the exponential 
+function has no zeros, these ~<r> functions **f, form a basis for 
+the space of solutions. 
+
+#7-1. EXAMPLES OF BINOMIAL EXPERIMENTS#
+
+Some experiments are composed 
+of repetitions of independent trials, each with <two> possible 
+outcomes. The binomial probability distribution may describe the variation 
+that occurs from one set of trials of such a <binomial> experiment 
+to another. We devote a chapter to the binomial distribution not 
+only because it is a mathematical model for an enormous variety of real 
+life phenomena, but also because it has important properties that recur 
+in many other probability models. We begin with a few examples of 
+binomial experiments. _MARKSMANSHIP EXAMPLE._ A trained marksman 
+shooting five rounds at a target, all under practically the same conditions, 
+may hit the bull's-eye from 0 to 5 times. In repeated sets of 
+five shots his numbers of bull's-eyes vary. What can we say of the 
+probabilities of the different possible numbers of bull's-eyes? 
+_INHERITANCE IN MICE._ In litters of eight mice from similar parents, 
+the number of mice with straight instead of wavy hair is an integer 
+from 0 to 8. What probabilities should be attached to these possible 
+outcomes? _ACES (ONES) WITH THREE DICE._ When three dice are 
+tossed repeatedly, what is the probability that the number of aces is 
+0 (or 1, or 2, or 3)? _GENERAL BINOMIAL PROBLEM._ More generally, 
+suppose that an experiment consists of a number of independent trials, 
+that each trial results in either a "success" or a "non-success" 
+("failure"), and that the probability of success remains constant 
+from trial to trial. In the examples above, the occurrence of 
+a bull's-eye, 
+a straight-haired mouse, or an ace could be called a "success". 
+In general, any outcome we choose may be labeled "success".
+
+The major question in this chapter is: What is the probability 
+of exactly ~<x> successes in ~<n> trials?   In 
+Chapters 3 and 4 we answered questions like those in the examples, 
+usually by counting points in a sample space. Fortunately, a general 
+formula of wide applicability solves all problems of this kind. Before 
+deriving this formula, we explain what we mean by "problems of this 
+kind".   Experiments are often composed of several identical 
+trials, and sometimes experiments themselves are repeated. In the marksmanship 
+example, a trial consists of "one round shot at a target" 
+with outcome either one bull's-eye (success) or none (failure). 
+Further, an experiment might consist of five rounds, and several sets 
+of five rounds might be regarded as a super-experiment composed of several 
+repetitions of the five-round experiment. If three dice are tossed, 
+a trial is one toss of one die and the experiment is composed of 
+three trials. Or, what amounts to the same thing, if one die is tossed 
+three times, each toss is a trial, and the three tosses form the experiment. 
+Mathematically, we shall not distinguish the experiment of 
+three dice tossed once from that of one die tossed three times. These 
+examples are illustrative of the use of the words "trial" and "experiment" 
+as they are used in this chapter, but they are quite flexible 
+words and it is well not to restrict them too narrowly. _EXAMPLE 
+1. STUDENT FOOTBALL MANAGERS._ Ten students act as managers for 
+a high-school football team, and of these managers a proportion ~<p> 
+are licensed drivers. Each Friday one manager is chosen by lot to 
+stay late and load the equipment on a truck. On three Fridays the coach 
+has needed a driver. Considering only these Fridays, what is the 
+probability that the coach had drivers all 3 times? Exactly 2 times? 
+1 time? 0 time? _DISCUSSION._ Note that there are 3 trials 
+of interest. Each trial consists of choosing a student manager at 
+random. The 2 possible outcomes on each trial are "driver" or "nondriver". 

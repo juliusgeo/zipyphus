@@ -4,6 +4,7 @@ import binascii
 import struct
 import time
 
+from functools import cache
 Token = namedtuple("Token", ["offset", "length", "indicator"])
 
 
@@ -20,8 +21,7 @@ def compress(
         window += input_array[:length]
         input_array = input_array[length:]
     return output
-
-
+@cache
 def blo(
     window: str, input_string: str, max_length: int = 15, max_offset: int = 4095
 ) -> tuple[int, int]:
@@ -29,9 +29,6 @@ def blo(
         return 0, 0
 
     cut_window = window[-max_offset:] if max_offset < len(window) else window
-    if input_string[0] not in cut_window:
-        best_length = rl_fs(input_string[0], input_string[1:])
-        return (min((1 + best_length), max_length), 0)
 
     length, offset, max_length = 0, 0, min(max_length, len(input_string))
     found_length = 0
@@ -43,7 +40,7 @@ def blo(
             length, offset = found_length, index
     return (min(length, max_length), offset) if found_length > 2 else (1, 0)
 
-
+@cache
 def rl_fs(window: str, input_string: str) -> int:
     return (
         1 + rl_fs(window[1:] + input_string[0], input_string[1:])
@@ -88,7 +85,7 @@ def huff_codes(val: Union[int, str]) -> tuple[int, int]:
     else:
         raise ValueError("Value out of range")
 
-
+@cache
 def length_code(n: int) -> tuple[int, int, int]:
     if n <= 2:
         return n, 0, 0
@@ -109,7 +106,7 @@ def length_code(n: int) -> tuple[int, int, int]:
     else:
         raise ValueError("Invalid length")
 
-
+@cache
 def distance_code(n: int) -> tuple[int, int, int]:
     if n <= 4:
         return n - 1, 0, 0
@@ -172,6 +169,7 @@ def tokens_to_stream(compressed: list[Token]) -> bytes:
     )
 def string_to_zip(filename: str, strk: str) -> None:
     compressed = compress(strk)
+    assert len(compressed) <= len(strk), "Did not actually compress"
     bitstream_bytes = tokens_to_stream(compressed)
     filename_bytes = filename.encode("ascii")
     filename_len = len(filename_bytes)
@@ -248,16 +246,3 @@ def string_to_zip(filename: str, strk: str) -> None:
         f.write(zip_content)
 
 
-# Check that our zip file is valid
-import zipfile
-
-for strk in [""""Did you win your sword fight?"
-"Of course I won the fucking sword fight," Hiro says. "I'm the greatest sword fighter in the world."
-"And you wrote the software."
-"Yeah. That, too," Hiro says."
-""", "aaaaaaaaaa", "abaaadfaa"]:
-    string_to_zip("sample.txt", strk)
-    with open("sample.zip", "rb") as f:
-        z = zipfile.ZipFile(f)
-        assert z.namelist() == ["sample.txt"]
-        assert z.read("sample.txt") == strk.encode("ascii"), f"{strk} failed"

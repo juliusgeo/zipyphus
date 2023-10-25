@@ -1,0 +1,200 @@
+may gradually build up the policy for any number. At each step of the 
+calculation the operating variables of only one stage need be varied.
+
+To see how important this economy is, let us suppose that there 
+are ~<m> operating variables at each stage and that the state 
+is specified by ~<n> variables; then the search for the maximum 
+at any one stage will require a number of operations of order **f (where 
+~<a> is some number not unreasonably large). To proceed from 
+one stage to the next a sufficient number of feed states must be investigated 
+to allow of interpolation; this number will be of the order 
+of **f. If, however, we are seeking the optimal ~<R>-stage policy 
+for a given feed state, only one search for a maximum is required at 
+the final step. Thus a number of operations of the order of **f are 
+required. If all the operating variables were varied simultaneously, 
+**f operations would be required to do the same job, and as ~<R> 
+increases this increases very much more rapidly than the number of operations 
+required by the dynamic program. But even more important than 
+this is the fact that the direct search by simultaneously varying all 
+operating conditions has produced only one optimal policy, namely, that 
+for the given feed state and ~<R> stages. In contrast, the dynamic 
+program produces this policy and a whole family of policies for 
+any smaller number of stages. If the problem is enlarged to require 
+a complete coverage of feed states, **f operations are needed by the dynamic 
+program and **f by the direct search. But **f is vastly larger 
+than ~<R>. No optimism is more baseless than that which believes 
+that the high speed of modern digital computers allows for use of the 
+crudest of methods in searching out a result. Suppose that **f, and 
+that the average operation requires only **f sec&. Then the dynamic 
+program would require about a minute whereas the direct search would 
+take 
+more than three millennia!   The principle of optimality thus 
+brings a vital organization into the search for the optimal policy of 
+a multistage decision process. Bellman (1957) has annunciated in the 
+following terms:   "An optimal policy has the property that 
+whatever the initial state and initial decision are, the remaining decisions 
+must constitute an optimal policy with respect to the state resulting 
+from the first decision".   This is the principle which 
+we will invoke in every case to set up a functional equation. It appears 
+in a form that is admirably suited to the powers of the digital 
+computer. At the same time, every device that can be employed to reduce 
+the number of variables is of the greatest value, and it is one of 
+the attractive features of dynamic programming that room is left for 
+ingenuity in using the special features of the problem to this end. 
+
+#2.2 
+THE DISCRETE DETERMINISTIC PROCESS#
+
+Consider the process illustrated 
+in Fig& 2.1, consisting of ~<R> distinct stages. These 
+will be numbered in the direction opposite to the flow of the process 
+stream, so that stage ~<r> is the ~<r>th stage from the end. 
+Let the state of the stream leaving stage ~<r> be denoted by a vector 
+**f and the operating variables of stage ~<r> by **f. Thus 
+**f denotes the state of the feed to the ~<R>-stage process, and 
+**f the state of the product from the last stage. Each stage transforms 
+the state **f of its feed to the state **f in a way that depends on 
+the operating variables **f. We write this **f. This transformation 
+is uniquely determined by **f and we therefore speak of the process 
+as deterministic. In practical situations there will be restrictions 
+on the admissible operating conditions, and we regard the vectors as belonging 
+to a fixed and bounded set ~<S>. The set of vectors **f 
+constitutes the operating policy or, more briefly, the policy, and a 
+policy is admissible if all the **f belong to ~<S>. When the policy 
+has been chosen the state of the product can be obtained from the 
+state of the feed by repeated application of the transformation (1); 
+thus **f. The objective function, which is to be maximized, is some 
+function, usually piecewise continuous, of the product state. Let this 
+be denoted by **f.   An optimal policy is an admissible policy 
+**f which maximizes the objective function ~<P>. The policy may 
+not be unique but the maximum value of ~<P> certainly is, and once 
+the policy is specified this maximum can be calculated by (2) and (3) 
+as a function of the feed state **f. Let **f where the maximization 
+is over all admissible policies **f. When it is necessary to be specific 
+we say that the optimal policy is an optimal ~<R>-stage policy 
+with respect to the feed state **f.   For any choice of admissible 
+policy **f in the first stage, the state of the stream leaving 
+this stage is given by **f. This is the feed state of the subsequent 
+**f stages which, according to the principle of optimality, must use an 
+optimal **f-stage policy with respect to this state. This will result 
+in a value **f of the objective function, and when **f is chosen correctly 
+this will give **f, the maximum of the objective function. Thus 
+**f 
+where the maximization is over all admissible policies **f, and **f 
+is related to **f by (5). The sequence of equations (6) can be solved 
+for **f when **f is known, and clearly **f, the maximization being 
+over all admissible **f.   The set of equations (5), (6), and the 
+starting equation (7) is of a recursive type well suited to programming 
+on the digital computer. In finding the optimal ~<R>-stage policy 
+from that of **f stages, only the function **f is needed. When 
+**f has been found it may be transferred into the storage location of 
+**f and the whole calculation repeated. We also see how the results 
+may be presented, although if ~<n>, the number of state variables, 
+is large any tabulation will become cumbersome. A table or set of tables 
+may be set out as in Table 2.1.   To extract the optimal 
+~<R>-stage policy with respect to the feed state **f, we enter section 
+~<R> of this table at the state **f and find immediately 
+from the last column the maximum value of the objective function. In 
+the third column is given the optimal policy for stage ~<R>, and 
+in the fourth, the resulting state of the stream when this policy is used. 
+Since by the principle of optimality the remaining stages use an 
+optimal **f-stage policy with respect to **f, we may enter section **f 
+of the table at this state **f and read off the optimal policy for stage 
+**f and the resulting state **f. Proceeding in this way up the table 
+we extract the complete optimal policy and, if it is desired, we 
+can check on **f by evaluating **f at the last stage.   It may be 
+that the objective function depends not only on **f but also on **f, 
+as when the cost of the operating policy is considered. A moment's 
+reflection shows that the above algorithm and presentation work equally 
+well in this case. A form of objective function that we shall often 
+have occasion to consider is **f. Here ~<V>({p}) represents 
+the 
+value of the stream in state ~{p} and ~<C>({q}) the cost 
+of operating the stage with conditions ~{q}. Hence ~<P> 
+is the increase in value of the stream minus the cost of operation, that 
+is, the net profit. If **f denotes the net profit from stage ~<r> 
+and **f then the principle of optimality gives **f This sequence 
+of equations may be started with the remark that with no process **f there 
+is no profit, i&e&, **f. 
+
+#2.3 THE DISCRETE STOCHASTIC PROCESS# 
+
+The process in which the outcome of any one stage is known only 
+statistically is also of interest, although for chemical reactor design 
+it is not as important as the deterministic process. In this case 
+the stage ~<r> operating with conditions **f transforms the state 
+of the stream from **f to **f, but only the probability distribution of 
+**f is known. This is specified by a distribution function **f such 
+that the probability that **f lies in some region ~<D> of the stage 
+space is **f.   We cannot now speak of maximizing the value 
+of the objective function, since this function is now known only in a 
+probabilistic sense. We can, however, maximize its expected value. For 
+a single stage we may define **f where the maximization is by choice 
+of **f. We thus have an optimal policy which maximizes the expected 
+value of the objective function for a given **f. If we consider a process 
+in which the outcome of one stage is known before passage to the 
+next, then the principle of optimality shows that the policy in subsequent 
+stages should be optimal with respect to the outcome of the first. 
+Then **f, the maximization being over all admissible **f and the integration 
+over the whole of stage space.   The type of presentation 
+of results used in the deterministic process may be used here, except 
+that now the fourth column is redundant. The third column gives 
+the optimal policy, but we must wait to see the outcome of stage ~<R> 
+and enter the preceding section of the table at this state. The 
+discussion of the optimal policy when the outcome of one stage is not 
+known before passing to the next is a very much more difficult matter. 
+
+#2.4 THE CONTINUOUS DETERMINISTIC PROCESS#
+
+In many cases it is not 
+possible to divide the process into a finite number of discrete stages, 
+since the state of the stream is transformed in a continuous manner 
+through the process. We replace ~<r>, the number of the stage 
+from the end of the process, by ~<t>, a continuous variable which 
+measures the "distance" of the point considered from the end of the 
+process. The word <distance> is used here in a rather general sense; 
+it may in fact be the time that will elapse before the end of the 
+process. If ~<T> is the total "length" of the process, its 
+feed state may be denoted by a vector ~{p}(<T>) and the product 
+state by ~{p}(O). ~{p}(<t>) denotes the state at 
+any point ~<t> and ~{q}(<t>) the vector of operating variables 
+there.
+
+A gyro-stabilized platform system, using restrained gyros, is 
+well suited for automatic leveling because of the characteristics of the 
+gyro-platform-servo combination. The restrained gyro-stabilized platform 
+with reasonable response characteristics operates with an approximate 
+equation of motion, neglecting transient effects, as follows: 
+**f where ~<U> is a torque applied about the output axis of the 
+controlling gyro.   The platform angle ~|f is the angle about 
+which the gyro is controlling. This is normally termed the gyro input 
+axis, 90` away from the gyro output or ~|j axis. The gyro angular 
+momentum is defined by ~<H>.   Thus if the gyro and platform-controller 
+combination maintains the platform with zero angular 
+deviation about the ~|f axis, the system can be rotated with an 
+angular velocity **f if a torque is supplied to the gyro output axis ~|j. 
+It is assumed that the gyros are designed with electrical torquers 
+so that a torque can be applied about their output axes. 
+In the system shown in Fig& 7-1, the accelerometer output is amplified 
+and the resulting voltage is applied to the gyro output-axis torquer. 
+This torque causes the entire system to rotate about the ~|f 
+axis, since the response to **f. If the polarities are correct, the 
+platform rotates in such a direction as to reduce the accelerometer output 
+to zero. As the accelerometer output is decreasing, the torque applied 
+to the gyro output axis decreases and, therefore, the rate decreases. 
+Finally, when the accelerometer output is zero, the entire system 
+remains stationary, and the platform is, by definition, leveled.
+
+A mathematical block diagram for the leveling system is shown in 
+Fig& 7-2. The platform is initially off level by the angle ~|f. 
+The angle generated by the platform servo ~|f multiplied by ~<g> 
+is the effective acceleration acting on the accelerometer. **f 
+is the scale factor of the accelerometer (**f). The voltage **f is amplified 
+by **f and applied to the gyro torquer with scale factor **f. 
+Finally, the gyro-stabilized platform characteristic is represented 
+by **f The system as indicated in Fig& 7-2 is fundamental and simple 
+because the transient effects of both the platform servo and the 
+accelerometer have been neglected. With these factors included, an upper 
+limit is placed on the allowable loop gain by stability considerations. 
+In this type of system, a high loop gain is desirable because it 
+provides a fast response time.   When the frequency response characteristics 

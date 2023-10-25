@@ -1,0 +1,200 @@
+Since the choice is by lot each week, the outcomes of 
+different trials are independent. The managers stay the same, so that 
+**f is the same for all weeks. We now generalize these ideas for general 
+binomial experiments.   For an experiment to qualify as a 
+<binomial experiment>, it must have four properties: (1) there must 
+be a fixed number of trials, (2) each trial must result in a "success" 
+or a "failure" (a binomial trial), (3) all trials must have 
+identical probabilities of success, (4) the trials must be independent 
+of each other. Below we use our earlier examples to describe and illustrate 
+these four properties. We also give, for each property, an example 
+where the property is absent. The language and notation introduced 
+are standard throughout the chapter. _1. THERE MUST BE A FIXED 
+NUMBER ~N OF REPEATED TRIALS._ For the marksman, we study sets 
+of five shots (**f); for the mice, we restrict attention to litters 
+of eight (**f); and for the aces, we toss three dice (**f). _EXPERIMENT 
+WITHOUT A FIXED NUMBER OF TRIALS._ Toss a die until an ace appears. 
+Here the number of trials is a random variable, not a fixed number. 
+_2. BINOMIAL TRIALS._ Each of the ~<n> trials is either a success 
+or a failure. "Success" and "failure" are just convenient 
+labels for the two categories of outcomes when we talk about binomial 
+trials in general. These words are more expressive than labels like 
+"~<A>" and "not-~<A>". It is natural from the marksman's 
+viewpoint to call a bull's-eye a success, but in the mice example 
+it is arbitrary which category corresponds to straight hair in a mouse. 
+The word "binomial" means "of two names" or "of two terms", 
+and both usages apply in our work: the first to the names of the 
+two outcomes of a binomial trial, and the second to the terms ~<p> 
+and **f that represent the probabilities of "success" and "failure". 
+Sometimes when there are many outcomes for a single trial, 
+we group these outcomes into two classes, as in the example of the die, 
+where we have arbitrarily constructed the classes "ace" and "not-ace". 
+_EXPERIMENT WITHOUT THE TWO-CLASS PROPERTY._ We classify 
+mice as "straight-haired" or "wavy-haired", but a hairless 
+mouse appears. We can escape from such a difficulty by ruling out the 
+animal as not constituting a trial, but such a solution is not always 
+satisfactory. _3. ALL TRIALS HAVE IDENTICAL PROBABILITIES OF SUCCESS._ 
+Each die has probability **f of producing an ace; the marksman 
+has some probability ~<p>, perhaps 0.1, of making a bull's-eye. 
+Note that we need not know the value of ~<p>, for the experiment 
+to be binomial. _EXPERIMENT WHERE ~P IS NOT CONSTANT._ During 
+a round of target practice the sun comes from behind a cloud and dazzles 
+the marksman, lowering his chance of a bull's-eye. _4. THE 
+TRIALS ARE INDEPENDENT._ Strictly speaking, this means that the probability 
+for each possible outcome of the experiment can be computed by 
+multiplying together the probabilities of the possible outcomes of the 
+single binomial trials. Thus in the three-dice example **f, **f, and 
+the independence assumption implies that the probability that the three 
+dice fall ace, not-ace, ace in that order is (1/6)(5/6)(1/6). Experimentally, 
+we expect independence when the trials have nothing to 
+do with one another. _EXAMPLES WHERE INDEPENDENCE FAILS._ A family 
+of five plans to go together either to the beach or to the mountains, 
+and a coin is tossed to decide. We want to know the number of people 
+going to the mountains. When this experiment is viewed as composed 
+of five binomial trials, one for each member of the family, the outcomes 
+of the trials are obviously not independent. Indeed, the experiment 
+is better viewed as consisting of one binomial trial for the entire 
+family. The following is a less extreme example of dependence. Consider 
+couples visiting an art museum. Each person votes for one of a pair 
+of pictures to receive a popular prize. Voting for one picture may 
+be called "success", for the other "failure". An experiment 
+consists of the voting of one couple, or two trials. In repetitions 
+of the experiment from couple to couple, the votes of the two persons 
+in a couple probably agree more often than independence would imply, because 
+couples who visit the museum together are more likely to have similar 
+tastes than are a random pair of people drawn from the entire population 
+of visitors. Table 7-1 illustrates the point. The table shows 
+that 0.6 of the boys and 0.6 of the girls vote for picture ~<A>. 
+Therefore, under independent voting, **f or 0.36 of the couples would 
+cast two votes for picture ~<A>, and **f or 0.16 would cast 
+two votes for picture ~<B>. Thus in independent voting, **f or 0.52 
+of the couples would agree. But Table 7-1 shows that **f or 0.70 agree, 
+too many for independent voting.   Each performance of an ~<n>-trial 
+binomial experiment results in some whole number from 0 
+through ~<n> as the value of the random variable ~<X>, where 
+**f. We want to study the <probability function> of this random variable. 
+For example, we are interested in the number of bull's-eyes, 
+not which shots were bull's-eyes. A binomial experiment can produce 
+random variables other than the number of successes. For example, the 
+marksman gets 5 shots, but we take his score to be the number of shots 
+<before> his first bull's-eye, that is, 0, 1, 2, 3, 4 (or 5, if 
+he gets no bull's-eye). Thus we do not score the number of bull's-eyes, 
+and the random variable is not the number of successes. 
+  The constancy of ~<p> and the independence are the conditions most 
+likely to give trouble in practice. Obviously, very slight changes 
+in ~<p> do not change the probabilities much, and a slight lack of 
+independence may not make an appreciable difference. (For instance, 
+see Example 2 of Section 5-5, on red cards in hands of 5.) On the 
+other hand, even when the binomial model does not describe well the physical 
+phenomenon being studied, the binomial model may still be used 
+as a baseline for comparative purposes; that is, we may discuss the 
+phenomenon in terms of its departures from the binomial model. _TO 
+SUMMARIZE:_ A <binomial experiment> consists of **f independent 
+binomial trials, all with the same probability **f of yielding a success. 
+The outcome of the experiment is ~<X> successes. The random 
+variable ~<X> takes the values **f with probabilities **f or, more 
+briefly **f.   We shall find a formula for the probability of 
+exactly ~<x> successes for given values of ~<p> and ~<n>. 
+When 
+each number of successes ~<x> is paired with its probability of 
+occurrence **f, the set of pairs **f, is a probability function called 
+a <binomial distribution>. The choice of ~<p> and ~<n> determines 
+the binomial distribution uniquely, and different choices always 
+produce different distributions (except when **f; then the number 
+of successes is always 0). The set of all binomial distributions is 
+called <the family of binomial distributions>, but in general discussions 
+this expression is often shortened to "the binomial distribution", 
+or even "the binomial" when the context is clear. Binomial distributions 
+were treated by James Bernoulli about 1700, and for this 
+reason binomial trials are sometimes called <Bernoulli trials>. _RANDOM 
+VARIABLES._ Each binomial trial of a binomial experiment produces 
+either 0 or 1 success. Therefore each binomial trial can be thought 
+of as producing a value of a random variable associated with that 
+trial and taking the values 0 and 1, with probabilities ~<q> and 
+~<p> respectively. The several trials of a binomial experiment 
+produce a new random variable ~<X>, the total number of successes, 
+which is just the sum of the random variables associated with the single 
+trials. _EXAMPLE 2._ The marksman gets two bull's-eyes, one 
+on his third shot and one on his fifth. The numbers of successes on 
+the five individual shots are, then, 0, 0, 1, 0, 1. The number of successes 
+on each shot is a value of a random variable that has values 0 
+or 1, and there are 5 such random variables here. Their sum is ~<X>, 
+the total number of successes, which in this experiment has the 
+value **f.
+
+Consider a simple, closed, plane curve ~<C> which is a real-analytic 
+image of the unit circle, and which is given by **f. These 
+are real analytic periodic functions with period ~<T>. In the 
+following paper it is shown that in a certain definite sense, exactly 
+an odd number of squares can be inscribed in every such curve which does 
+not contain an infinite number of inscribed squares. This theorem 
+is similar to the theorem of Kakutani that there exists a circumscribing 
+cube around any closed, bounded convex set in **f. The latter theorem 
+has been generalized by Yamabe and Yujobo, and Cairns to show 
+that in **f there are families of such cubes. Here, for the case of 
+squares inscribed in plane curves, we remove the restriction to convexity 
+and give certain other results.   A square inscribed in a curve 
+~<C> means a square with its four corner points on the curve, 
+though it may not lie entirely in the interior of ~<C>. Indeed, 
+the spiral **f, with the two endpoints connected by a straight line possesses 
+only one inscribed square. The square has one corner point on 
+the straight line segment, and does not lie entirely in the interior.
+
+On ~<C>, from the point ~<P> at **f to the point ~<Q> 
+at **f, we construct the chord, and upon the chord as a side 
+erect a square in such a way that as ~<s> approaches zero the square 
+is inside ~<C>. As ~<s> increases we consider the two free 
+corner points of the square, **f and **f, adjacent to ~<P> and ~<Q> 
+respectively. As ~<s> approaches ~<T> the square will 
+be outside ~<C> and therefore both **f and **f must cross ~<C> 
+an odd number of times as ~<s> varies from zero to ~<T>. 
+The points may also touch ~<C> without crossing.   Suppose 
+**f crosses ~<C> when **f. We now have certain squares with three 
+corners on ~<C>. For any such square the middle corner of these 
+will be called the vertex of the square and the corner not on the 
+curve will be called the diagonal point of the square. Each point on 
+~<C>, as a vertex, may possess a finite number of corresponding diagonal 
+points by the above construction.   To each paired vertex 
+and diagonal point there corresponds a unique forward corner point, 
+i&e&, the corner on ~<C> reached first by proceeding along ~<C> 
+from the vertex in the direction of increasing ~<t>. If the 
+vertex is at **f, and if the interior of ~<C> is on the left as 
+one moves in the direction of increasing ~<t>, then every such corner 
+can be found from the curve obtained by rotating ~<C> clockwise 
+through 90` about the vertex. The set of intersections of **f, 
+the rotated curve, with the original curve ~<C> consists of just 
+the set of forward corner points on ~<C> corresponding to the vertex 
+at **f, plus the vertex itself. We note that two such curves ~<C> 
+and **f, cannot coincide at more than a finite number of points; 
+otherwise, being analytic, they would coincide at all points, which 
+is impossible since they do not coincide near **f.   With each 
+vertex we associate certain numerical values, namely the set of positive 
+differences in the parameter ~<t> between the vertex and its corresponding 
+forward corner points. For the vertex at **f, these values 
+will be denoted by **f. The function ~<f(t)> defined in this way 
+is multi-valued.   We consider now the graph of the function 
+~<f(t)> on **f. We will refer to the plane of ~<C> and **f as 
+the ~<C>-plane and to the plane of the graph as the ~<f>-plane. 
+The graph, as a set, may have a finite number of components. We 
+will denote the values of ~<f(t)> on different components by **f. 
+Each point with abscissa ~<t> on the graph represents an intersection 
+between ~<C> and **f. There are two types of such intersections, 
+depending essentially on whether the curves cross at the point 
+of intersection. An <ordinary> point will be any point of intersection 
+~<A> such that in every neighborhood of ~<A> in the ~<C>-plane, 
+**f meets both the interior and the exterior of ~<C>. 
+Any other point of intersection between ~<C> and **f will be called 
+a <tangent> point. This terminology will also be applied to the 
+corresponding points in the ~<f>-plane. We can now prove several 
+lemmas. 
+
+#LEMMA 1.#
+
+<In some neighborhood in the ~f-plane of 
+any ordinary point of the graph, the function ~f is a single-valued, 
+continuous function>. _PROOF._ We first show that the function 
+is 
+single-valued in some neighborhood. With the vertex at **f in the ~<C>-plane 
+we assume that **f is the parametric location on ~<C> 
+of an ordinary intersection ~<Q> between ~<C> and **f. In 
+the ~<f>-plane the coordinates of the corresponding point are 

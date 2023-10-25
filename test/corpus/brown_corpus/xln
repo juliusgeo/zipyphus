@@ -1,0 +1,200 @@
+Moon, which is again in contrast to the infrared emission, which reaches 
+its maximum at Full Moon. Piddington and Minnett explained 
+their observations by pointing out that rocklike materials which are likely 
+to make up the surface of the moon would be partially transparent 
+to radio waves, although opaque to infrared radiation. The infrared 
+emission could then be assumed to originate at the surface of the moon, 
+while the radio emission originates at some depth beneath the surface, 
+where the temperature variation due to solar radiation is reduced 
+in amplitude and shifted in phase. Since the absorption of radio waves 
+in rocklike material varies with wave length, it should be possible 
+to sample the temperature variation at different depths beneath the surface 
+and possibly detect changes in the structure or composition of the 
+lunar surface material.   The radio emission of a planet was 
+first detected in 1955, when Burke and Franklin (1955) identified the 
+origin of interference-like radio noise on their records at about 15 
+meters wave length as emission from Jupiter. This sporadic type of 
+planetary radiation is discussed by Burke (chap& 13) and Gallet (chap& 
+14). Steady radiation which was presumably of thermal origin was 
+observed from Venus at 3.15 and 9.4 ~cm, and from Mars and Jupiter 
+at 3.15 ~cm in 1956 (Mayer, McCullough, and Sloanaker, 1958<a, 
+b, c>), and from Saturn at 3.75 ~cm in 1957 (Drake and Ewen, 
+1958). In the relatively short time since these early observations, 
+Venus has been observed at additional wave lengths in the range from 
+0.8 to 10.2 ~cm, and Jupiter has been observed over the wave-length 
+range from 3.03 to 68 ~cm.   The observable characteristics of 
+planetary radio radiation are the intensity, the polarization, and the 
+direction of arrival of the waves. The maximum angular diameter of 
+any planetary disk as observed from the earth is about 1 minute of arc. 
+This is much smaller than the highest resolution of even the very 
+large reflectors now under construction, and consequently the radio emission 
+of different regions of the disk cannot be resolved. It should 
+be possible, however, to put useful limits on the diameters of the radio 
+sources by observing with large reflectors or with interferometers. 
+Measurements of polarization are presently limited by apparatus sensitivity 
+and will remain difficult because of the low intensity of the 
+planetary radiation at the earth. There have been few measurements specifically 
+for the determination of the polarization of planetary radiation. 
+The measurements made with the ~NRL 50-foot reflector, 
+which is altitude-azimuth-mounted, would have shown a systematic change 
+with local hour angle in the measured intensities of Venus and Jupiter 
+if a substantial part of the radiation had been linearly polarized. 
+Recent interferometer measurements (Radhakrishnan and Roberts, 
+1960) have shown the 960-~Mc emission of Jupiter to be partially 
+polarized 
+and to originate in a region of larger diameter than the visible 
+disk. Other than this very significant result, most of the information 
+now available about the radio emission of the planets is restricted 
+to the intensity of the radiation.   The concept of apparent 
+black-body temperature is used to describe the radiation received from 
+the moon and the planets. The received radiation is compared with the 
+radiation from a hypothetical black body which subtends the same solid 
+angle as the visible disk of the planet. The <apparent black-body 
+disk temperature> is the temperature which must be assumed for the 
+black body in order that the intensity of its radiation should equal that 
+of the observed radiation. The use of this concept does not specify 
+the origin of the radiation, and only if the planet really radiates 
+as a black body, will the apparent black-body temperature correspond 
+to the physical temperature of the emitting material.   The radio 
+radiation of the sun which is reflected from the moon and planets should 
+be negligible compared with their thermal emission at centimeter 
+wave lengths, except possibly at times of exceptional outbursts of solar 
+radio noise. The quiescent level of centimeter wave-length solar radiation 
+would increase the average disk brightness temperature by less 
+than 1` ~K. At meter wave lengths and increase of the order of 
+10` ~K in the average disk temperatures of the nearer planets would 
+be expected. Therefore, neglecting the extreme outbursts, reflected 
+solar radiation is not expected to cause sizable errors in the measurements 
+of planetary radiation in the centimeter- and decimeter-wave-length 
+range. 
+
+#2. THE MOON#
+
+_2.1 OBSERVATIONS_ Radio observations 
+of the moon have been made over the range of wave lengths from 4.3 ~mm 
+to 75 ~cm, and the results are summarized in Table 1. Observations 
+have also been made at 1.5 ~mm using optical techniques (Sinton, 
+1955, 1956,; see also chap& 11). Not all the observers have used 
+the same procedures or made the same assumptions about the lunar brightness 
+distribution when reducing the data, and this, together with 
+differences in the methods of calibrating the antennae and receivers, 
+must account for much of the disagreement in the measured radio brightness 
+temperatures.   In the observations at 4.3 ~mm (Coates, 
+1959<a>), the diameter of the antenna beam, 6'.7, was small enough 
+to allow resolution of some of the larger features of the lunar surface, 
+and contour diagrams have been made of the lunar brightness distribution 
+at three lunar phases. These observations indicate that the lunar 
+maria heat up more rapidly and also cool off more rapidly than do 
+the mountainous regions. Mare Imbrium seems to be an exception and 
+remains cooler than the regions which surround it. These contour diagrams 
+also suggest a rather rapid falloff in the radio brightness with 
+latitude.   Very recently, observations have been made at 8-~mm 
+wave length with a reflector 22 meters in diameter with a resultant 
+beam width of only about 2' (Amenitskii, Noskova, and Salomonovich, 
+1960). The constant-temperature contours are much smoother than those 
+observed at 4.3 ~mm by Coates (1959<a>), and apparently the emission 
+at 8 ~mm is not nearly so sensitive to differences in surface 
+features. Such high-resolution observations as these are needed at several 
+wave lengths in order that the radio emission of the moon can 
+be properly 
+interpreted.   The observations of Mayer, McCullough, 
+and Sloanaker at 3.15 ~cm and of Sloanaker at 10.3 ~cm have not 
+previously 
+been published and will be briefly described. Measurements 
+at 3.15 ~cm were obtained on 11 days spread over the interval May 3 
+to June 19, 1956, using the 50-foot reflector at the U& S& Naval 
+Research Laboratory in Washington. The half-intensity diameter 
+of the antenna beam was about 9', and the angle subtended by the moon 
+included the entire main beam and part of the first side lobes. The 
+antenna patterns and the power gain at the peak of the beam were both 
+measured (Mayer, McCullough, and Sloanaker, 1958<b>), so that 
+the 
+absolute power sensitivity of the antenna beam over the solid angle 
+of the moon was known. The ratio of the measured antenna temperature 
+change during a drift scan across the moon to the average brightness temperature 
+of the moon over the antenna beam (assuming that the brightness 
+temperature of the sky is negligible) was found, by graphical integration 
+of the antenna directivity diagram, to be 0.85. The measured 
+brightness temperature is a good approximation to the brightness temperature 
+at the <center of the lunar disk> because of the narrow antenna 
+beam and because the temperature distribution over the central portion 
+of the moon's disk is nearly uniform. The result of the observations 
+is (in ` ~K) **f where the phase angle, |q<t>, is measured 
+in degrees from new moon and the probable errors include absolute 
+as well as relative errors. This result is plotted along with the 8.6-~mm 
+observations of Gibson (1958) in figure 1, <a>. The variation 
+in the 3-~cm emission of the moon during a lunation is very much 
+less than the variation in the 8.6-~mm emission, as would be expected 
+from the explanation of Piddington and Minnett (1949). In the discussion 
+which follows, the time average of the radio emission will be 
+referred to as the <constant component>, and the superimposed periodic 
+variation will be called the <variable component>.   The 10.3-~cm 
+observation of Sloanaker was made on May 20, 1958, using the 
+84-foot reflector at the Maryland Point Observatory of the U& 
+S& Naval Research Laboratory. The age of the moon was about 2 
+days. The half-intensity diameter of the main lobe of the antenna was 
+about 18'.5, and the brightness temperature was reduced by assuming 
+a Gaussian shape for the antenna beam and a uniformly bright disk for 
+the moon. 
+
+#ABSTRACT#
+
+Experiments were made on an electric arc applying a porous 
+graphite anode cooled by a transpiring gas (Argon). Thus, the 
+energy transferred from the arc to the anode was partly fed back into 
+the arc. It was shown that by proper anode design the net energy loss 
+of the arc to the anode could be reduced to approximately 15% of the 
+total arc energy A detailed energy balance of the anode was established. 
+The anode ablation could be reduced to a negligible amount. The dependence 
+of the arc voltage upon the mass flow velocity of the transpirating 
+gas was investigated for various arc lengths and currents between 
+100 ~Amp and 200 ~Amp. Qualitative observations were made and 
+high-speed motion pictures were taken to study flow phenomena in the 
+arc at various mass flow velocities. 
+
+#INTRODUCTION#
+
+The high heat 
+fluxes existing at the electrode surfaces of electric arcs necessitate 
+extensive cooling to prevent electrode ablation. The cooling requirements 
+are particularly severe at the anode. In free burning electric 
+arcs, for instance, approximately 90% of the total arc power is transferred 
+to the anode giving rise to local heat fluxes in excess of 
+**f as measured by the authors- the exact value depending on the arc 
+atmosphere. In plasma generators as currently commercially available 
+for industrial use or as high temperature research tools often more than 
+50% of the total energy input is being transferred to the co0ling 
+medium of the anode.   The higher heat transfer rates at the anode 
+compared with those at the cathode can be explained by the physical 
+phenomena occurring in free burning arcs. In plasma generators the 
+superimposed forced convection may modify the picture somewhat. The heat 
+transfer to the anode is due to the following effects: 1. Heat 
+of condensation (work function) plus kinetic energy of the electrons impinging 
+on the anode. This energy transfer depends on the current, the 
+temperature in the arc column, the anode material, and the conditions 
+in the anode sheath. 2. Heat transfer by molecular conduction as well 
+as by radiation from the arc column.   The heat transfer to 
+the anode in free burning arcs is enhanced by a hot gas jet flowing from 
+the cathode towards the anode with velocities up **f. This phenomenon 
+has been experimentally investigated in detail by Maecker (Ref& 
+1). The pressure gradient producing the jet is due to the nature of the 
+magnetic field in the arc (rapid decrease of current density from cathode 
+to the anode). Hence, the flow conditions at the anode of free 
+burning arcs resemble those near a stagnation point.   it is apparent 
+from the above and from experimental evidence that the cooling requirements 
+for the anode of free burning arcs are large compared with 
+those for the cathode. The gas flow through a plasma generator will modify 
+these conditions; however, the anode is still the part receiving 
+the largest heat flux. An attempt to improve the life of the anodes 
+or the efficiency of the plasma generators must, therefore, aim at 
+a reduction of the anode loss. The following possibilities exist for 
+achieving this: 1. The use of high voltages and low currents by proper 
+design to reduce electron heat transfer to the anode for a given 
+power output. 2. Continuous motion of the arc contact area at the anode 
+by flow or magnetic forces. 3. Feed back of the energy transferred 
+to the anode by applying gas transpiration through the anode. 
+The third method was, to our knowledge, successfully applied for the 
+first time by C& Sheer and co-workers (Ref& 2). The purpose of 
+the present study is to study the thermal conditions and to establish 
+an energy balance for a transpiration cooled anode as well as the effect 
+of blowing on the arc voltage. Gas injection through a porous anode 

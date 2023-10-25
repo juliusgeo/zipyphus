@@ -1,0 +1,200 @@
+(transpiration cooling) not only feeds back the energy transferred 
+to the anode by the above mentioned processes, but also modifies the conditions 
+in the arc itself. A detailed study of this latter phenomenon 
+was not attempted in this paper. Argon was used as a blowing gas to 
+exclude any effects of dissociation or chemical reaction. The anode 
+material was porous graphite. Sintered porous metals should be usable 
+in principle. However, technical difficulties arise by melting at local 
+hot spots. The experimental arrangement as described below is based 
+on the geometry of free burning arcs. Thus, direct comparisons can 
+be drawn with free burning arcs which have been studied in detail during 
+the past years and decades by numerous investigators (Ref& 3). 
+
+#EXPERIMENTAL APPARATUS#
+
+Figures 1 to 3 show photographic and schematic 
+views of the test stand and of two different models of the anode 
+holder. The cathode consisted of a 1/4'' diameter thoriated tungsten 
+rod attached to a water cooled copper tube. This tube could be 
+adjusted in its axial direction by an electric drive to establish the 
+required electrode spacing. The anode in figure 2 was mounted by means 
+of the anode holder which was attached to a steel plug and disk. The 
+transpiring gas ejected from the anode formed a jet directed axially 
+towards the cathode below. Inflow of air from the surrounding atmosphere 
+was prevented by the two disks shown in figure 2. Argon was also 
+blown at low velocities (mass flow rate **f) through a tube coaxial 
+with 
+the cathode as an additional precaution against contamination of the 
+arc by air. The anode consisted of a 1/2 inch diameter porous graphite 
+plug, 1/4 inch long. The graphite was National Carbon ~NC 
+60, which has a porosity of 50% and an average pore size of 30 This 
+small pore size was required to ensure uniformity of the flow leaving 
+the anode. The anode plug (Figure 2) was inserted into a carbon 
+anode holder. A shielded thermocouple was used to measure the upstream 
+temperature of the transpiring gas. It was exposed to a high velocity 
+gas jet. A plug and a tube with holes in its cylindrical walls divided 
+the chamber above the porous plug into two parts. This arrangement 
+had the purpose to prevent heated gas to reach the thermocouple by 
+natural convection. Two pyrometers shown in figure 1 and 2 (Pyrometer 
+Instrument Co& Model 95) served for simultaneous measurement of 
+the anode surface temperature and the temperature distribution along 
+the anode holder. Three thermocouples were placed at different locations 
+in the aluminum disk surrounding the anode holder to determine its 
+temperature.   Another anode holder used in the experiments is shown 
+in figure 3. In this design the anode holder is water cooled and 
+the heat losses by conduction from the anode were determined by measuring 
+the temperature rise of the coolant. To reduce heat transfer from 
+the hot has to this anode holder outside the regime of the arc, a carbon 
+shield was attached tothe surface providing an air gap of 1/16 
+inch between the plate and the surface of the anode holder. In addition, 
+the inner surface of the carbon shield was covered with aluminum foil 
+to reduce radiation. Temperatures of the shield and of the surface 
+of the water-cooled anode holder were measured by thermocouples to account 
+for heat received by the coolant but not originating from the anode 
+plug.   The argon flow from commercial bottles was regulated 
+by a pressure regulator and measured with a gas flow rator. The power 
+source was a commercial D& C& rectifier. At 100 ~Amp the 
+360 cycle ripple was less than 0.5 ~V (peak to peak) with a resistive 
+load. The current was regulated by means of a variable resistor and 
+measured with a 50 ~mV shunt and millivoltmeter. The arc voltage 
+was measured with a voltmeter whose terminals were connected to the anode 
+and cathode holders. Because of the falling characteristic of the 
+rectifier, no ballast resistor was required for stability of operation. 
+A high frequency starter was used to start the arc. 
+
+#EXPERIMENTAL 
+PROCEDURE AND ERROR ANALYSIS#
+
+_1. TRANSPIRATION COOLED ANODE WITH 
+CARBON ANODE HOLDER_ The anode holder shown in figure 2 was designed 
+with two goals in mind. The heat losses of the holder were to be reduced 
+as far as possible and they should be such that an accurate heat 
+balance can be made. In order to reduce the number of variable parameters, 
+all experiments were made with a constant arc length of 0.5'' 
+and a current of 100 ~Amp. The argon flow through the porous anode 
+was varied systematically between **f. and **f. The lower limit 
+was determined by the fact that for smaller flow rates the arc started 
+to strike to the anode holder instead of to the porous graphite plug 
+and that it became highly unstable. The upper limit was determined by 
+the difficulty of measuring the characteristic anode surface temperature 
+(see below) since only a small region of the anode was struck by the 
+arc. This region which had a higher temperature than the rest of the 
+anode surface changed size and location continuously.   For each 
+mass flow rate the arc voltage was measured. To measure the surface 
+temperature of the anode plug, the surface was scanned with a pyrometer. 
+As it turned out, a very hot region occurred on the plug. Its temperature 
+was denoted by **f. The size of this hot region was estimated 
+by eye. The rest of the surface had a temperature which decreased towards 
+the outer diameter of the plug. The mean temperature of this region 
+was approximated by the temperature measured halfways between the 
+edge of the hot spot and the rim of the plug. It was denoted by **f. 
+The mean temperature of the surface was then computed according to 
+the following relation: **f where ~x is the fraction of the plug area 
+covered by the hot spot. Assuming thermal equilibrium between the 
+anode surface and the transpiring argon, the gas enthalpy rise through 
+the anode was calculated according to the relation **f whereby the specific 
+heat of argon was taken as **f. This calculation results in 
+an 
+enthalpy rise which is somewhat high because it assumes a mass flow equally 
+distributed over the plug cross section whereas in reality the mass 
+velocity is expected to be smaller in the regions of higher temperatures.
+
+The upstream gas temperature measured with the thermocouple 
+shown in figure 2 was **f. The **f values are listed in Table 1 
+together 
+with the measured surface temperatures and arc voltages. Simultaneously 
+with the anode surface temperature and voltage measurements pyrometer 
+readings were taken along the cylindrical surface of the carbon anode 
+holder as indicated on figure 2. Some of these temperatures are plotted 
+in figure 4. They showed no marked dependence on the flow rate 
+within the accuracy of these measurements. Thus, the dotted line shown 
+in figure 4 was taken as typical for the temperature distribution for 
+all blowing rates.   The thermocouples in the aluminum disk shown 
+in figure 2 indicated an equilibrium temperature of the surface of 
+**f. This temperature was taken as environmental temperature to which 
+the anode holder was exposed as far as radiation is concerned. It 
+is sufficiently small compared with the surface temperature of the anode 
+holder, to make the energy flux radiated from the environment toward 
+the anode holder negligible within the accuracy of the present measurements. 
+The reflection of radiation originating from the anode holder 
+and reflected back to it by the surrounding metal surfaces should also 
+be small because of the specular characteristic of the metal surfaces 
+and of the specific geometry. The total heat loss through the anode 
+holder included also the heat conducted through the base of the cylindrical 
+piece into the adjacent metal parts. It was calculated from the 
+temperature gradient **f at **f inch as **f. The total heat flux from 
+the porous plug into the plug holder is thereby **f The temperature 
+distribution of figure 4 gives **f for all blowing rates, assuming **f. 
+The temperature dependent value of ~|e was taken from Ref& 
+7. The radiation loss from the anode surface was computed according to 
+**f where **f is the mean of the fourth powers of the temperatures **f 
+and **f calculated analogously to equation (1).
+
+A band viscometer is shown in Figure 2. It consists of two blocks 
+with flat surfaces held apart by shims. There is a small well in 
+the top in which the fluid or paste to be tested is placed. A tape 
+of cellulose acetate is pulled between the blocks and the tape pulls the 
+fluid or paste with it between the parallel faces of the blocks. In 
+normal use weights are hung on the end of the tape and allowed to pull 
+the tape and the material to be tested between the blocks. After it 
+has reached terminal velocity, the time for the tape to travel a known 
+distance is recorded. By the use of various weights, data for a force-rate 
+of shear graph can be obtained. The instrument used for this 
+work was a slight modification of that previously described.   In 
+this test a **f tape was pulled between the blocks with a motor and 
+pulley at a rate of **f with a clearance of 0.002'' on each side of 
+the tape. This gives a rate of shear of **f. This, however, can only 
+be considered 
+approximate, as the diameter of the pulley was increased by the 
+build-up of tape and the tape was occasionally removed from the pulley 
+during the runs. The face of one block contained a hole 1/16'' 
+in diameter which led to a 
+manometer for the measurement of the normal pressure.   Although 
+there were only four fluids tested, it was apparent that there were 
+two distinct types. Two of the fluids showed a high-positive normal pressure 
+when undergoing shear, and two showed small negative pressures 
+which were negligible in comparison with the amount of the positive pressures 
+generated by the other two.   Figure 3 shows the data on 
+a silicone fluid, labeled 12,500 ~cps which gave a high positive normal 
+pressure. Although the tape was run for over 1 hr&, a steady 
+state was not reached, and it was concluded that the reason for this was 
+that the back pressure of the manometer was built up from the material 
+fed from between the blocks and this was available at a very slow 
+rate. A system had to be used which did not depend upon the feeding of 
+the fluid into the manometer if measurements of the normal pressure 
+were to be made in a reasonable time. A back pressure was then introduced, 
+and the rise or fall of the material in the manometer indicated 
+which was greater, the normal pressure in the block or the back pressure. 
+By this method it was determined that the normal pressure exerted 
+by a sample of polybutene (molecular weight reported to be 770) was 
+over half an atmosphere. The actual pressure was not determined because 
+the pressure was beyond the upper limit of the apparatus on hand.
+
+The two fluids which gave the small negative pressures were polybutenes 
+with molecular weights which were stated to be 520 and 300. 
+These are fluids which one would expect to be less viscoelastic or more 
+Newtonian because of their lower molecular weight. The maximum suction 
+was 3.25'' of test fluid measured from the top of the block, 
+and steady states were apparently reached with these fluids. It is presumed 
+that this negative head was associated with some geometric factor 
+of the assembly, since different readings were obtained with the same 
+fluid and the only apparent difference was the assembly and disassembly 
+of the apparatus. This negative pressure is not explained by the 
+velocity head **f since this is not sufficient to explain the readings 
+by several magnitudes.   These experiments can be considered 
+exploratory only. However, they do demonstrate the presence of large 
+normal pressures in the presence of flat shear fields which were forecast 
+by the theory in the first part of the paper. They also give information 
+which will aid in the design of a more satisfactory instrument 
+for the measurement of the normal pressures. Such an instrument would 
+be useful for the characterization of many commercial materials as well 
+as theoretical studies. The elasticity as a parameter of fluids 
+which 
+is not subject to simple measurement at present, and it is a parameter 
+which is probably varying in an unknown manner with many commercial 
+materials. Such an instrument is expected to be especially useful 
+if it could be used to measure the elasticity of heavy pastes such as 
+printing inks, paints, adhesives, molten plastics, and bread dough, for 
+the elasticity is related to those various properties termed "length", 
+"shortness", "spinnability", etc&, which are usually judged 
+by subjective methods at present.   The actual change **f 
