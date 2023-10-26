@@ -5,7 +5,7 @@ import zipfile
 import os
 
 CORPUS_DIR = "corpus/brown_corpus"
-@pytest.mark.parametrize("file", os.listdir(CORPUS_DIR)[:1])
+@pytest.mark.parametrize("file", os.listdir(CORPUS_DIR)[:10])
 def test_brown_corpus(file):
     filepath = os.path.join(CORPUS_DIR, file)
     strk = open(filepath, "r").read()

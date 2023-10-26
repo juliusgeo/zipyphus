@@ -1,3 +1,4 @@
+import sys
 from collections import namedtuple
 from typing import Union
 import binascii
@@ -21,7 +22,7 @@ def compress(
         window += input_array[:length]
         input_array = input_array[length:]
     return output
-@cache
+
 def blo(
     window: str, input_string: str, max_length: int = 15, max_offset: int = 4095
 ) -> tuple[int, int]:
@@ -31,23 +32,21 @@ def blo(
     cut_window = window[-max_offset:] if max_offset < len(window) else window
 
     length, offset, max_length = 0, 0, min(max_length, len(input_string))
-    found_length = 0
     for index in range(1, (len(cut_window) + 1)):
         if (
             cut_window[-index] == input_string[0]
             and (found_length := rl_fs(cut_window[-index:], input_string)) > length
         ):
             length, offset = found_length, index
-    return (min(length, max_length), offset) if found_length > 2 else (1, 0)
+    return (min(max_length, length), offset) if length > 2 else (1, 0)
 
-@cache
 def rl_fs(window: str, input_string: str) -> int:
-    return (
-        1 + rl_fs(window[1:] + input_string[0], input_string[1:])
-        if window and input_string and window[0] == input_string[0]
-        else 0
-    )
-
+    count = 0
+    while window and input_string and window[0] == input_string[0]:
+        count += 1
+        window = window[1:] + input_string[0]
+        input_string = input_string[1:]
+    return count
 
 def decompress(compressed: list[Token]) -> str:
     output = ""
@@ -169,6 +168,9 @@ def tokens_to_stream(compressed: list[Token]) -> bytes:
     )
 def string_to_zip(filename: str, strk: str) -> None:
     compressed = compress(strk)
+    if len(compressed) == len(strk):
+        sys.stderr.writelines([f"No compression achieved:{strk} {compressed}", "\n"])
+    sys.stderr.writelines(["Compression ratio:", f"{len(compressed)}/{len(strk)} = {str(float(len(compressed)/len(strk)))}","\n"])
     assert len(compressed) <= len(strk), "Did not actually compress"
     bitstream_bytes = tokens_to_stream(compressed)
     filename_bytes = filename.encode("ascii")
