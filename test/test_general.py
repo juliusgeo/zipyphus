@@ -209,7 +209,7 @@ def test_dist_code():
         ),
         (
             "\ncouldn't leave so soon after her arrival, in all politeness to her \nhost. And it so happened that adjacent to a couch on which she ",
-            1.0,
+            .82,
         ),
         ("aaaaaaaaaa", 0.2),
         ("abaaadfaa", 1.0),

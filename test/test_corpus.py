@@ -12,7 +12,6 @@ def test_brown_corpus(file):
     filepath = os.path.join(CORPUS_DIR, file)
     strk = open(filepath, "r").read()
     string_to_zip("sample.txt", strk)
-    print(strk.encode("ascii"))
     with open("sample.zip", "rb") as f:
         z = zipfile.ZipFile(f)
         assert z.namelist() == ["sample.txt"]
