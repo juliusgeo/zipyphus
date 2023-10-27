@@ -1,4 +1,3 @@
-import sys
 from collections import namedtuple
 from typing import Union
 import binascii
@@ -15,30 +14,36 @@ def compress(
 ) -> list[Token]:
     output = []
     input_idx = 0
-    while input_idx < len(input_string):
+    input_string = memoryview(input_string.encode("ascii"))
+    total_len = len(input_string)
+    while input_idx < total_len:
         length, offset = best_length_offset(
             input_string[:input_idx], input_string[input_idx:], max_length, max_offset
         )
-        if offset < 1:
-            length = 1
         output.append(Token(offset, length, input_string[input_idx]))
         input_idx += length
     return output
 
 
 def best_length_offset(
-    window: str, input_string: str, max_length: int = 15, max_offset: int = 4095
+    window: memoryview,
+    input_string: memoryview,
+    max_length: int = 15,
+    max_offset: int = 4095,
 ) -> tuple[int, int]:
-    if input_string is None or input_string == "":
-        return 0, 0
     if max_length > len(input_string):
         max_length = len(input_string)
     length, offset = 0, 0
-    for index in range(1, (min(len(window), max_offset) + 1)):
+    w_len = len(window)
+    for index in range(1, (min(w_len, max_offset) + 1)):
         if (
             window[-index] == input_string[0]
             and max_length
-            >= (found_length := run_length(window, input_string, len(window) - index))
+            >= (
+                found_length := run_length(
+                    window, input_string, w_len - 1, w_len - index
+                )
+            )
             > length
         ):
             length, offset = found_length, index
@@ -46,13 +51,18 @@ def best_length_offset(
     return (length, offset) if length > 2 else (1, 0)
 
 
-def run_length(window: str, input_string: str, start_idx: int) -> int:
+def run_length(
+    window: memoryview, input_string: memoryview, w_len, start_idx: int
+) -> int:
     count = 0
-    w_len, i_len = len(window) - 1,len(input_string)
-    while count < i_len and window[start_idx] == input_string[count]:
+    w_idx = start_idx
+    i_len = len(input_string)
+    while count < i_len and window[w_idx] == input_string[count]:
         count += 1
-        if start_idx < w_len:
-            start_idx += 1
+        if w_idx < w_len:
+            w_idx += 1
+        else:
+            w_idx = start_idx
     return count
 
 
@@ -192,7 +202,6 @@ def string_to_zip(filename: str, strk: str) -> None:
     crc_val = binascii.crc32(strk.encode("ascii"))
     uncomp_size = len(strk.encode("ascii"))
     comp_size = len(bitstream_bytes)
-
     # Create the local file header
     local_header = (
         b"PK\003\004"
