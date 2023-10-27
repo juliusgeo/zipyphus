@@ -4,23 +4,27 @@ from typing import Union
 import binascii
 import struct
 import time
-
 from functools import cache
+
+
 Token = namedtuple("Token", ["offset", "length", "indicator"])
 
 
 def compress(
     input_string: str, max_offset: int = 2047, max_length: int = 31
 ) -> list[Token]:
-    window, output = "", []
-    while input_string != "":
-        length, offset = best_length_offset(window, input_string, max_length, max_offset)
+    output = []
+    input_idx = 0
+    while input_idx < len(input_string):
+        length, offset = best_length_offset(
+            input_string[:input_idx], input_string[input_idx:], max_length, max_offset
+        )
         if offset < 1:
             length = 1
-        output.append(Token(offset, length, input_string[0]))
-        window += input_string[:length]
-        input_string = input_string[length:]
+        output.append(Token(offset, length, input_string[input_idx]))
+        input_idx += length
     return output
+
 
 def best_length_offset(
     window: str, input_string: str, max_length: int = 15, max_offset: int = 4095
@@ -33,20 +37,24 @@ def best_length_offset(
     for index in range(1, (min(len(window), max_offset) + 1)):
         if (
             window[-index] == input_string[0]
-            and max_length > (found_length := run_length(window, input_string, len(window)-index)) > length
+            and max_length
+            >= (found_length := run_length(window, input_string, len(window) - index))
+            > length
         ):
             length, offset = found_length, index
 
     return (length, offset) if length > 2 else (1, 0)
 
+
 def run_length(window: str, input_string: str, start_idx: int) -> int:
     count = 0
-    w_len = len(window)-1
-    while count < len(input_string) and window[start_idx] == input_string[count]:
+    w_len, i_len = len(window) - 1,len(input_string)
+    while count < i_len and window[start_idx] == input_string[count]:
         count += 1
         if start_idx < w_len:
             start_idx += 1
     return count
+
 
 def decompress(compressed: list[Token]) -> str:
     output = ""
@@ -70,6 +78,7 @@ def decompress(compressed: list[Token]) -> str:
     return output
 
 
+@cache
 def huff_codes(val: Union[int, str]) -> tuple[int, int]:
     if isinstance(val, str):  # Literal byte
         val = ord(val)
@@ -83,6 +92,7 @@ def huff_codes(val: Union[int, str]) -> tuple[int, int]:
         return int(bin(val - 280 + 0b11000000), 2), 8
     else:
         raise ValueError("Value out of range")
+
 
 @cache
 def length_code(n: int) -> tuple[int, int, int]:
@@ -104,6 +114,7 @@ def length_code(n: int) -> tuple[int, int, int]:
         return 285, 0, 0
     else:
         raise ValueError("Invalid length")
+
 
 @cache
 def distance_code(n: int) -> tuple[int, int, int]:
@@ -166,12 +177,10 @@ def tokens_to_stream(compressed: list[Token]) -> bytes:
         )
         + b"\x00"
     )
+
+
 def string_to_zip(filename: str, strk: str) -> None:
     compressed = compress(strk)
-    if len(compressed) == len(strk):
-        sys.stderr.writelines([f"No compression achieved:{strk} {compressed}", "\n"])
-    sys.stderr.writelines(["Compression ratio:", f"{len(compressed)}/{len(strk)} = {str(float(len(compressed)/len(strk)))}","\n"])
-    assert len(compressed) <= len(strk), "Did not actually compress"
     bitstream_bytes = tokens_to_stream(compressed)
     filename_bytes = filename.encode("ascii")
     filename_len = len(filename_bytes)
@@ -246,5 +255,3 @@ def string_to_zip(filename: str, strk: str) -> None:
 
     with open("sample.zip", "wb") as f:
         f.write(zip_content)
-
-
