@@ -15,7 +15,7 @@ def compress(
     input_array = str(input_string[:])
     window, output = "", []
     while input_array != "":
-        length, offset = blo(window, input_array, max_length, max_offset)
+        length, offset = best_length_offset(window, input_array, max_length, max_offset)
         if offset < 1:
             length = 1
         output.append(Token(offset, length, input_array[0]))
@@ -23,7 +23,7 @@ def compress(
         input_array = input_array[length:]
     return output
 
-def blo(
+def best_length_offset(
     window: str, input_string: str, max_length: int = 15, max_offset: int = 4095
 ) -> tuple[int, int]:
     if input_string is None or input_string == "":
@@ -35,12 +35,12 @@ def blo(
     for index in range(1, (len(cut_window) + 1)):
         if (
             cut_window[-index] == input_string[0]
-            and (found_length := rl_fs(cut_window[-index:], input_string)) > length
+            and (found_length := run_length(cut_window[-index:], input_string)) > length
         ):
             length, offset = found_length, index
-    return (min(max_length, length), offset) if length > 2 else (1, 0)
+    return (length, offset) if length > 2 else (1, 0)
 
-def rl_fs(window: str, input_string: str) -> int:
+def run_length(window: str, input_string: str) -> int:
     count = 0
     while window and input_string and window[0] == input_string[0]:
         count += 1
