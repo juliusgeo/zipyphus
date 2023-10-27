@@ -12,15 +12,14 @@ Token = namedtuple("Token", ["offset", "length", "indicator"])
 def compress(
     input_string: str, max_offset: int = 2047, max_length: int = 31
 ) -> list[Token]:
-    input_array = str(input_string[:])
     window, output = "", []
-    while input_array != "":
-        length, offset = best_length_offset(window, input_array, max_length, max_offset)
+    while input_string != "":
+        length, offset = best_length_offset(window, input_string, max_length, max_offset)
         if offset < 1:
             length = 1
-        output.append(Token(offset, length, input_array[0]))
-        window += input_array[:length]
-        input_array = input_array[length:]
+        output.append(Token(offset, length, input_string[0]))
+        window += input_string[:length]
+        input_string = input_string[length:]
     return output
 
 def best_length_offset(
@@ -28,24 +27,25 @@ def best_length_offset(
 ) -> tuple[int, int]:
     if input_string is None or input_string == "":
         return 0, 0
-
-    cut_window = window[-max_offset:] if max_offset < len(window) else window
-
-    length, offset, max_length = 0, 0, min(max_length, len(input_string))
-    for index in range(1, (len(cut_window) + 1)):
+    if max_length > len(input_string):
+        max_length = len(input_string)
+    length, offset = 0, 0
+    for index in range(1, (min(len(window), max_offset) + 1)):
         if (
-            cut_window[-index] == input_string[0]
-            and (found_length := run_length(cut_window[-index:], input_string)) > length
+            window[-index] == input_string[0]
+            and max_length > (found_length := run_length(window, input_string, len(window)-index)) > length
         ):
             length, offset = found_length, index
+
     return (length, offset) if length > 2 else (1, 0)
 
-def run_length(window: str, input_string: str) -> int:
+def run_length(window: str, input_string: str, start_idx: int) -> int:
     count = 0
-    while window and input_string and window[0] == input_string[0]:
+    w_len = len(window)-1
+    while count < len(input_string) and window[start_idx] == input_string[count]:
         count += 1
-        window = window[1:] + input_string[0]
-        input_string = input_string[1:]
+        if start_idx < w_len:
+            start_idx += 1
     return count
 
 def decompress(compressed: list[Token]) -> str:

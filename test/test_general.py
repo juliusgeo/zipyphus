@@ -1,4 +1,8 @@
 from main import length_code, distance_code, string_to_zip
+import pytest
+import zipfile
+
+
 length_test_cases = [
     ((3, 3), 257, 0),
     ((4, 4), 258, 0),
@@ -187,18 +191,15 @@ def test_dist_code():
             _, c, d = val
             assert (a, b) == (c, d)
 
-
-def test_zip_output():
-    import zipfile
-
-    for strk in [""""Did you win your sword fight?"
+@pytest.mark.parametrize("strk", [""""Did you win your sword fight?"
     "Of course I won the fucking sword fight," Hiro says. "I'm the greatest sword fighter in the world."
     "And you wrote the software."
     "Yeah. That, too," Hiro says."
-    """, "aaaaaaaaaa", "abaaadfaa"]:
-        string_to_zip("sample.txt", strk)
-        with open("sample.zip", "rb") as f:
-            z = zipfile.ZipFile(f)
-            assert z.namelist() == ["sample.txt"]
-            assert z.read("sample.txt") == strk.encode("ascii")
+    """, "aaaaaaaaaa", "abaaadfaa"])
+def test_zip_output(strk):
+    string_to_zip("sample.txt", strk)
+    with open("sample.zip", "rb") as f:
+        z = zipfile.ZipFile(f)
+        assert z.namelist() == ["sample.txt"]
+        assert z.read("sample.txt") == strk.encode("ascii")
 
