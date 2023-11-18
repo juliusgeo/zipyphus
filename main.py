@@ -4,6 +4,7 @@ import binascii
 import struct
 import time
 from functools import cache
+from functools import partial
 
 
 Token = namedtuple("Token", ["offset", "length", "indicator"])
@@ -28,41 +29,33 @@ def compress(
 def best_length_offset(
     window: memoryview,
     input_string: memoryview,
-    max_length: int = 15,
+    max_length: int = 31,
     max_offset: int = 4095,
 ) -> tuple[int, int]:
-    if max_length > len(input_string):
-        max_length = len(input_string)
-    length, offset = 0, 0
     w_len = len(window)
-    for index in range(1, (min(w_len, max_offset) + 1)):
-        if (
-            window[-index] == input_string[0]
-            and max_length
-            >= (
-                found_length := run_length(
-                    window, input_string, w_len - 1, w_len - index
-                )
-            )
-            > length
-        ):
+    length, offset = 2, 0
+    ip_str_0 = input_string[0]
+    rl = partial(run_length, window, input_string, len(input_string), w_len)
+    for found_length, index in [
+        (rl(w_len - i), i)
+        for i in range(1, (min(w_len, max_offset) + 1))
+        if window[-i] == ip_str_0
+    ]:
+        if max_length > found_length > length:
             length, offset = found_length, index
-
     return (length, offset) if length > 2 else (1, 0)
 
 
 def run_length(
-    window: memoryview, input_string: memoryview, w_len, start_idx: int
+    window: memoryview, input_string: memoryview, i_len: int, w_len: int, start_idx: int
 ) -> int:
     count = 0
-    w_idx = start_idx
-    i_len = len(input_string)
-    while count < i_len and window[w_idx] == input_string[count]:
+    window_size = w_len - start_idx
+    while (
+        count < i_len
+        and window[start_idx + (count % window_size)] == input_string[count]
+    ):
         count += 1
-        if w_idx < w_len:
-            w_idx += 1
-        else:
-            w_idx = start_idx
     return count
 
 
