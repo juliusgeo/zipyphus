@@ -1,6 +1,4 @@
-(
-);\
-   import sys;itls,colls,binasc,struct,time=[\
+import sys;itls,colls,binasc,struct,time=[\
  __import__(i) for i in("itertools",\
 "collections","binascii","struct","time")];\
 s=sys.stdin.read();(MOFFSET,MLENGTH,\
@@ -16,16 +14,16 @@ s=sys.stdin.read();(MOFFSET,MLENGTH,\
         if(lo:=max([(i,l\
        ) if(l:=min(sum(\
       1 for _ in itls.\
-     takewhile( lambda x\
+     takewhile(lambda x\
      :x[0]==x[1],zip(\
-    itls.cycle(s[:\
+    itls.cycle(s[: \
     idx][-i:]),s[idx\
    :],),)),MLENGTH,\
-  ))>2 else(0,1) for i
+  ))>2 else(0,1)for i
    in range(1,(min(
  idx,MOFFSET)+1))\
- if s[:idx][-i]==s[\
-idx:][0]],default\
+if s[:idx][-i]==s[\
+idx:][0]],default \
 =(0,1),key= lambda x:x[1],))];it="110"+"".join(\
 ["{:0{}b}".format(*( lambda n:(int(bin(n+\
 0b00110000),2),8 if n<144 else int(bin(n-144+\
@@ -109,10 +107,9 @@ i:i+8][::-1],2).              to_bytes(1,byteorder=\
       tm_mday,mtime.  tm_hour<<\
         11|mtime.tm_min<<5|\
          mtime.tm_sec//2,\
-         binasc.crc32(s.\
-         encode("ascii")
-         ),len(bb),len(s.
-         encode("ascii")\
+         binasc.crc32(s:=\
+         s.encode("ascii")
+         ),len(bb),len(s\
          ),len(fnbytes:=\
          FILE_NAME.encode
          ("ascii")),)),0,
@@ -126,4 +123,4 @@ i:i+8][::-1],2).              to_bytes(1,byteorder=\
          ,0x20,0,)+fnbytes
     ))+struct.pack("<4s4H2LH",\
     b"PK\x05\x06",0,0,1,1,len(cdh),\
-    len(lh)+args[3],0,))));#julius
+    len(lh)+args[3],0,))));#juliusgeo
