@@ -1,4 +1,4 @@
-from main import strk
+from main import s
 import pytest
 import zipfile
 from os import remove

@@ -1,33 +1,20 @@
+import sys
+
 itertools, collections, binascii, struct, time = [
     __import__(i) for i in ("itertools", "collections", "binascii", "struct", "time")
 ]
 
-strk = """Many local citizens feared that there would be irregularities 
-at the polls, and Williams got himself a permit to carry a gun 
-and promised an orderly election.   Sheriff Felix Tabb said the 
-ordinary apparently made good his promise.   "Everything went 
-real smooth", the sheriff said. "There wasn't a bit of trouble". 
-_AUSTIN, TEXAS_- Committee approval of Gov& Price Daniel's 
-"abandoned property" act seemed certain Thursday despite the adamant 
-protests of Texas bankers.   Daniel personally led the fight 
-for the measure, which he had watered down considerably since its 
-rejection by two previous Legislatures, in a public hearing before 
-the House Committee on Revenue and Taxation.   Under committee 
-rules, it went automatically to a subcommittee for one week. But 
-questions with which committee members taunted bankers appearing as witnesses 
-left little doubt that they will recommend passage of it.
-"""
-Token = collections.namedtuple("Token", ["offset", "length", "indicator"])
-MAX_OFFSET = 2047
-MAX_LENGTH = 31
+s = sys.stdin.read()
+MOFFSET = 2047
+MLENGTH = 31
 FILE_NAME = "sample.txt"
 ZIP_NAME = "sample.zip"
-input_idx = 0
+idx = 0
 compressed = [
-    (Token(*loffset, strk[input_idx]), input_idx := input_idx + loffset[1])[0]
-    for _ in itertools.takewhile(lambda _: input_idx < len(strk), iter(int, None))
+    ((*lo, s[idx]), idx := idx + lo[1])[0]
+    for _ in itertools.takewhile(lambda _: idx < len(s), iter(int, None))
     if (
-        loffset := max(
+        lo := max(
             [
                 (i, l)
                 if (
@@ -37,18 +24,18 @@ compressed = [
                             for _ in itertools.takewhile(
                                 lambda x: x[0] == x[1],
                                 zip(
-                                    itertools.cycle(strk[:input_idx][-i:]),
-                                    strk[input_idx:],
+                                    itertools.cycle(s[:idx][-i:]),
+                                    s[idx:],
                                 ),
                             )
                         ),
-                        MAX_LENGTH,
+                        MLENGTH,
                     )
                 )
                 > 2
                 else (0, 1)
-                for i in range(1, (min(input_idx, MAX_OFFSET) + 1))
-                if strk[:input_idx][-i] == strk[input_idx:][0]
+                for i in range(1, (min(idx, MOFFSET) + 1))
+                if s[:idx][-i] == s[idx:][0]
             ],
             default=(0, 1),
             key=lambda x: x[1],
@@ -66,9 +53,9 @@ it = "110" + "".join(
                     7 if n < 280 else int(bin(n - 280 + 0b11000000), 2),
                     8 if n < 288 else (),
                 )
-            )(ord(tok.indicator))
+            )(ord(tok[2]))
         )
-        if tok.length <= 1
+        if tok[1] <= 1
         else (
             (
                 "{:07b}".format(
@@ -93,7 +80,7 @@ it = "110" + "".join(
                                 if n == 258
                                 else ()
                             )
-                        )(tok.length)
+                        )(tok[1])
                     )[0]
                 )[-7:]
             )
@@ -133,7 +120,7 @@ it = "110" + "".join(
                                 if n <= 32768
                                 else ()
                             )
-                        )(tok.offset)
+                        )(tok[0])
                     )[0]
                 )[-5:]
             )
@@ -144,7 +131,7 @@ it = "110" + "".join(
 )
 
 
-bitstream_bytes = (
+bb = (
     b"".join(
         [
             int(it[i : i + 8][::-1], 2).to_bytes(1, byteorder="big", signed=False)
@@ -157,7 +144,7 @@ bitstream_bytes = (
 open(ZIP_NAME, "wb").write(
     (
         (
-            local_header := (
+            lh := (
                 b"PK\003\004"
                 + struct.pack(
                     "<2B4HL2L2H",
@@ -167,26 +154,24 @@ open(ZIP_NAME, "wb").write(
                     8,
                     *(
                         args := (
-                            ((mod_time := time.localtime()).tm_year - 1980) << 9
-                            | mod_time.tm_mon << 5
-                            | mod_time.tm_mday,
-                            mod_time.tm_hour << 11
-                            | mod_time.tm_min << 5
-                            | mod_time.tm_sec // 2,
-                            binascii.crc32(strk.encode("ascii")),
-                            len(bitstream_bytes),
-                            len(strk.encode("ascii")),
-                            len(filename_bytes := FILE_NAME.encode("ascii")),
+                            ((mtime := time.localtime()).tm_year - 1980) << 9
+                            | mtime.tm_mon << 5
+                            | mtime.tm_mday,
+                            mtime.tm_hour << 11 | mtime.tm_min << 5 | mtime.tm_sec // 2,
+                            binascii.crc32(s.encode("ascii")),
+                            len(bb),
+                            len(s.encode("ascii")),
+                            len(fnbytes := FILE_NAME.encode("ascii")),
                         )
                     ),
                     0,
                 )
-                + filename_bytes
+                + fnbytes
             )
         )
-        + bitstream_bytes
+        + bb
         + (
-            cd_header := (
+            cdh := (
                 b"PK\001\002"
                 + struct.pack(
                     "<4B4HL2L5H2L",
@@ -204,7 +189,7 @@ open(ZIP_NAME, "wb").write(
                     0x20,
                     0,
                 )
-                + filename_bytes
+                + fnbytes
             )
         )
         + struct.pack(
@@ -214,9 +199,17 @@ open(ZIP_NAME, "wb").write(
             0,
             1,
             1,
-            len(cd_header),
-            len(local_header) + args[3],
+            len(cdh),
+            len(lh) + args[3],
             0,
         )
     )
 )
+import zipfile
+from os import remove
+
+with open("sample.zip", "rb") as f:
+    z = zipfile.ZipFile(f)
+    assert z.namelist() == ["sample.txt"]
+    assert z.read("sample.txt") == s.encode("ascii")
+    remove("sample.zip")
